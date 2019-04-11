@@ -1,3 +1,19 @@
+1. broker：broker 模块
+2. client：消息客户端，包含消息生产者、消息消费者相关类
+3. common：公共包
+4. dev：开发者信息（非源代码 ）
+5. distribution：部署实例文件夹
+6. example：示例代码
+7. filter：消息过滤相关基础类
+8. filtersrv：消息过滤服务器实现相关类
+11. openmessaging：消息开放标准
+12. remoting：远程通信模块，基于 Netty
+13. srvutil：服务器工具类
+14. store：消息存储实现相关类
+15. style：checkstyle 相关实现
+16. test：测试相关类
+17. tools：工具类，监控命令相关实现类
+
 ### 1.3.1 设计理念
 
 基于主题的发布与订阅模式：消息发送、消息存储、消息消费  
