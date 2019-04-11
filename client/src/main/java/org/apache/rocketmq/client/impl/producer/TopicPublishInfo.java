@@ -23,10 +23,16 @@ import org.apache.rocketmq.common.message.MessageQueue;
 import org.apache.rocketmq.common.protocol.route.QueueData;
 import org.apache.rocketmq.common.protocol.route.TopicRouteData;
 
+/**
+ * 注释3.4.2：每个Topic存储的信息
+ */
 public class TopicPublishInfo {
+    // 注释3.4.2：是否为顺序Topic
     private boolean orderTopic = false;
     private boolean haveTopicRouterInfo = false;
+    // 注释3.4.2：Topic下的消息队列
     private List<MessageQueue> messageQueueList = new ArrayList<MessageQueue>();
+    // 注释3.4.3：ThreadLocal + volatile 玩法
     private volatile ThreadLocalIndex sendWhichQueue = new ThreadLocalIndex();
     private TopicRouteData topicRouteData;
 
@@ -66,6 +72,9 @@ public class TopicPublishInfo {
         this.haveTopicRouterInfo = haveTopicRouterInfo;
     }
 
+    // 注释3.4.3：选择某个具体队列，由于有找不到的情况，可能会执行多次本方法，参数即上一次的失败的 broker
+    // 存在的问题在于，如果某个 broker 宕机，需要遍历它的所有 Queue 才能找到正确的 queue，那能直接跳过有
+    // 问题的 broker 吗
     public MessageQueue selectOneMessageQueue(final String lastBrokerName) {
         if (lastBrokerName == null) {
             return selectOneMessageQueue();

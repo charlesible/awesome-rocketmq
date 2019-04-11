@@ -612,7 +612,7 @@ public class MQClientInstance {
                         } else {
                             log.info("the topic[{}] route info changed, old[{}] ,new[{}]", topic, old, topicRouteData);
                         }
-
+                        // 注释3.4.2：从NameServer获取到的Topic消息队列跟本地缓存有修改的话
                         if (changed) {
                             TopicRouteData cloneTopicRouteData = topicRouteData.cloneTopicRouteData();
 
@@ -621,6 +621,7 @@ public class MQClientInstance {
                             }
 
                             // Update Pub info
+                            // 注释3.4.2：更新 Topic 对应的相关 Broker 地址缓存表
                             {
                                 TopicPublishInfo publishInfo = topicRouteData2TopicPublishInfo(topic, topicRouteData);
                                 publishInfo.setHaveTopicRouterInfo(true);

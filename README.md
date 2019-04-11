@@ -1,52 +1,101 @@
-## Apache RocketMQ [![Build Status](https://travis-ci.org/apache/rocketmq.svg?branch=master)](https://travis-ci.org/apache/rocketmq) [![Coverage Status](https://coveralls.io/repos/github/apache/rocketmq/badge.svg?branch=master)](https://coveralls.io/github/apache/rocketmq?branch=master)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.rocketmq/rocketmq-all/badge.svg)](http://search.maven.org/#search%7Cga%7C1%7Corg.apache.rocketmq)
-[![GitHub release](https://img.shields.io/badge/release-download-orange.svg)](https://rocketmq.apache.org/dowloading/releases)
-[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+### 1.3.1 设计理念
 
-**[Apache RocketMQ](https://rocketmq.apache.org) is a distributed messaging and streaming platform with low latency, high performance and reliability, trillion-level capacity and flexible scalability.**
+基于主题的发布与订阅模式：消息发送、消息存储、消息消费  
+NameServer 实现元数据的管理（Topic路由信息等），但集群之间互不通信  
 
-It offers a variety of features:
+# 2 路由中心 NameServer
 
-* Pub/Sub messaging model
-* Scheduled message delivery
-* Message retroactivity by time or offset
-* Log hub for streaming
-* Big data integration
-* Reliable FIFO and strict ordered messaging in the same queue
-* Efficient pull&push consumption model
-* Million-level message accumulation capacity in a single queue
-* Multiple messaging protocols like JMS and OpenMessaging
-* Flexible distributed scale-out deployment architecture
-* Lightning-fast batch message exchange system
-* Various message filter mechanics such as SQL and Tag
-* Docker images for isolated testing and cloud isolated clusters
-* Feature-rich administrative dashboard for configuration, metrics and monitoring
-* Access control list
-* Message trace
+## 2.1 架构设计
+
+NameServer 互相之间不通信，Broker 消息服务器在启动时向所有的 NameServer 注册，Producer
+在发送消息之前从 NameServer 获取 Broker 服务器地址列表，然后根据负载算法选择一台进行发送，
+NameServer 与每台 Broker 保持长连接，30s 检测 Broker 是否存活，如果检测到 Broker 宕机，
+从路由注册表中移除，但不会马上通知 Producer，为了降低 NameServer 的复杂度，让 Producer 
+的容错机制保证消息发送的高可用性
+
+## 2.3 路由注册、故障剔除
+
+### 2.3.1 路由元信息
+
+QueueData：在 2M-2S 中，每个 M-S 的每个 Topic 有 4个读队列和4个写队列  
+BrokerData  
+BrokerLiveInfo
+
+### 2.3.2 路由注册
+
+Broker 基于定时线程池组装请求信息，遍历 NameServer 发送，多个 Broker 心跳包
+NameServer 基于读写锁串行更新 Broker 信息，但是读取 Broker 表信息是并发读，标准
+的 ReadWriteLock
+
+### 2.3.3 路由删除
+
+被动：NameServer 的定时任务线程会 10s 扫描一次 Broker 元信息表，查看 BrokerLive 的
+lastUpdateTimestamp 并与当前时间戳对比，超过 120s 进行移除操作，并更新对应的其它
+元信息表  
+主动：Broker 正常关闭，发送 unregisterBroker 指令删除
+
+### 2.3.4 路由发现
+
+非实时，即 NameServer 不主动推送最新的路由，而是由客户端主动定时通过特殊的某个主题去拉
+取最新的路由
+
+# 3 消息发送
+
+可靠消息发送、可靠异步发送、单向（oneway）发送
+
+## 3.1 简略消息发送
+
+同步(sync)：发送消息的API是阻塞的，直到消息服务器返回  
+异步(async)：发送消息的API是异步主线程不阻塞，通过回调来获取发送结果   
+单向(oneway)：发送消息的API直接返回，也没回调函数，只管发
+
+## 3.2 Message 类
+
+扩展都存放到 map，包括 tag keys 等
+
+## 3.3 生产者启动流程
+
+### 3.3.1 DefaultMQProducer
+
+### 3.3.2 生产者启动流程
+
+## 3.4 消息发送基本流程
+
+验证消息、查找路由、消息发送 
+
+### 3.4.1 消息长度验证
+
+### 3.4.2 查找主题路由信息
+
+### 3.4.3 选择消息队列
+
+根据 ThreadLocal + random + volatile：对消息队列轮询查找，并对超过阈值 broker 没有
+交互的直接剔除，避免轮询已经宕机的 broker 消息队列
+
+### 3.4.4 消息发送
+
+## 3.5 批量消息发送
+
+使用 MessageBatch 类，在发送时使用 instanceof 判断是否是批量，从而进行操作  
+压缩不支持批量
+
+# 4 消息存储
+
+## 4.1 存储概要
+
+Commitlog、ConsumeQueue、IndexFile   
+Commitlog：将所有主题的消息存储在同一个文件中，确保消息发送时顺序写文件，但是对消息主题检索消息
+不友好  
+因此额外增加了 ConsumeQueue 消息队列文件，每个消息主题包含多个消息消费队列，
+每个消息队列有一个消息文件  
+IndexFile 索引文件，加速消息检索，根据消息的属性快速从 Commitlog 检索消息  
+![][0]
+
+## 4.2 初识消息存储
+
+## 4.3 消息发送存储流程
 
 
-----------
 
-## Learn it & Contact us
-* Mailing Lists: <https://rocketmq.apache.org/about/contact/>
-* Home: <https://rocketmq.apache.org>
-* Docs: <https://rocketmq.apache.org/docs/quick-start/>
-* Issues: <https://github.com/apache/rocketmq/issues>
-* Ask: <https://stackoverflow.com/questions/tagged/rocketmq>
-* Slack: <https://rocketmq-invite-automation.herokuapp.com/>
- 
-
-----------
-
-## Apache RocketMQ Community
-* [RocketMQ Community Projects](https://github.com/apache/rocketmq-externals)
-----------
-
-## Contributing
-We always welcome new contributions, whether for trivial cleanups, big new features or other material rewards, more details see [here](http://rocketmq.apache.org/docs/how-to-contribute/).
- 
-----------
-## License
-[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html) Copyright (C) Apache Software Foundation
-
+[0]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/4_1.png
 

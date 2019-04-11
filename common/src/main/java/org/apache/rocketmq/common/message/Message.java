@@ -22,11 +22,16 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 注释3.2：消息类
+ */
 public class Message implements Serializable {
     private static final long serialVersionUID = 8445773977080406428L;
 
     private String topic;
     private int flag;
+    // 注释3.2：存放 TAG、KEYS、waitStoreMsgOK 消息发送时是否等待消息存储完成后再返回（异步同步刷盘）
+    // delayTimeLevel 消息延迟级别，用于定时消息和消息重试
     private Map<String, String> properties;
     private byte[] body;
     private String transactionId;

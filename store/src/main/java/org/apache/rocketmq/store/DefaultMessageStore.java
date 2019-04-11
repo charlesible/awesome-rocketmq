@@ -62,30 +62,31 @@ import org.apache.rocketmq.store.stats.BrokerStatsManager;
 public class DefaultMessageStore implements MessageStore {
     private static final InternalLogger log = InternalLoggerFactory.getLogger(LoggerName.STORE_LOGGER_NAME);
 
+    // 注释4.2：消息存储配置信息
     private final MessageStoreConfig messageStoreConfig;
-    // CommitLog
+    // 注释4.2：CommitLog类
     private final CommitLog commitLog;
-
+    // 注释4.2：消息队列存储缓存表，按消息主题分组，内部按队列分
     private final ConcurrentMap<String/* topic */, ConcurrentMap<Integer/* queueId */, ConsumeQueue>> consumeQueueTable;
-
+    // 注释4.2：消息队列文件 ConsumeQueue 刷盘线程
     private final FlushConsumeQueueService flushConsumeQueueService;
-
+    // 注释4.2：清除 CommitLog 文件服务
     private final CleanCommitLogService cleanCommitLogService;
-
+    // 注释4.2：清除 ConsumeQueue 文件服务
     private final CleanConsumeQueueService cleanConsumeQueueService;
 
     private final IndexService indexService;
-
+    // 注释4.2：MappedFile 分配服务
     private final AllocateMappedFileService allocateMappedFileService;
-
+    // 注释4.2：CommitLog消息分发，根据 CommitLog 文件构建 ConsumeQueue、 IndexFile 文件
     private final ReputMessageService reputMessageService;
-
+    // 注释4.2：存储 HA 机制
     private final HAService haService;
 
     private final ScheduleMessageService scheduleMessageService;
-
+    // 注释4.2：文件刷盘检测点
     private final StoreStatsService storeStatsService;
-
+    // 注释4.2：消息堆内存缓存
     private final TransientStorePool transientStorePool;
 
     private final RunningFlags runningFlags = new RunningFlags();
@@ -94,6 +95,7 @@ public class DefaultMessageStore implements MessageStore {
     private final ScheduledExecutorService scheduledExecutorService =
         Executors.newSingleThreadScheduledExecutor(new ThreadFactoryImpl("StoreScheduledThread"));
     private final BrokerStatsManager brokerStatsManager;
+    // 注释4.2：消息拉取长轮询模式消息达到监听器
     private final MessageArrivingListener messageArrivingListener;
     private final BrokerConfig brokerConfig;
 
@@ -102,7 +104,7 @@ public class DefaultMessageStore implements MessageStore {
     private StoreCheckpoint storeCheckpoint;
 
     private AtomicLong printTimes = new AtomicLong(0);
-
+    // 注释4.2：CommitLog 文件转发请求
     private final LinkedList<CommitLogDispatcher> dispatcherList;
 
     private RandomAccessFile lockFile;
