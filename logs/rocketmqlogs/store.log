@@ -1,0 +1,979 @@
+2019-04-10 23:52:53 INFO AllocateMappedFileService - AllocateMappedFileService service started
+2019-04-10 23:52:53 INFO main - last shutdown normally
+2019-04-10 23:52:53 INFO main - load commit log OK
+2019-04-10 23:52:53 INFO main - load logics queue all over, OK
+2019-04-10 23:52:53 INFO main - store checkpoint file not exists, /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/checkpoint
+2019-04-10 23:52:53 WARN main - The commitlog files are deleted, and delete the consume queue files
+2019-04-10 23:52:53 INFO main - load over, and the max phy offset = 0
+2019-04-10 23:52:53 INFO main - [SetReputOffset] maxPhysicalPosInLogicQueue=0 clMinOffset=-1 clMaxOffset=0 clConfirmedOffset=-1
+2019-04-10 23:52:53 INFO ReputMessageService - ReputMessageService service started
+2019-04-10 23:52:53 INFO AcceptSocketService - AcceptSocketService service started
+2019-04-10 23:52:53 INFO GroupTransferService - GroupTransferService service started
+2019-04-10 23:52:53 INFO HAClient - HAClient service started
+2019-04-10 23:52:53 INFO FlushConsumeQueueService - FlushConsumeQueueService service started
+2019-04-10 23:52:53 INFO FlushRealTimeService - FlushRealTimeService service started
+2019-04-10 23:52:53 INFO StoreStatsService - StoreStatsService service started
+2019-04-10 23:52:53 INFO main - /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/abort create OK
+2019-04-10 23:53:53 INFO StoreStatsService - [STORETPS] put_tps  get_found_tps  get_miss_tps  get_transfered_tps 
+2019-04-10 23:53:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-10 23:53:53 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:53:53 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:53:53 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:54:03 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:54:03 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:54:03 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:54:13 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:54:13 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:54:13 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:54:23 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:54:23 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:54:23 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:54:33 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:54:33 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:54:33 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:54:43 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:54:43 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:54:43 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:54:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321486697445777 get_transfered_tps 0.0
+2019-04-10 23:54:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-10 23:54:53 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:54:53 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:54:53 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:55:03 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:55:03 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:55:03 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:55:13 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:55:13 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:55:13 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:55:23 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:55:23 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:55:23 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:55:33 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:55:33 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:55:33 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:55:43 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:55:43 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:55:43 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:55:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321817698644698 get_transfered_tps 0.0
+2019-04-10 23:55:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-10 23:55:53 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:55:53 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:55:53 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:56:03 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:56:03 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:56:03 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:56:13 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:56:13 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:56:13 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:56:23 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:56:23 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:56:23 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:56:33 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:56:33 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:56:33 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:56:43 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-10 23:56:43 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-10 23:56:43 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-10 23:56:50 INFO AllocateMappedFileService - /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/commitlog mkdir OK
+2019-04-10 23:56:50 INFO ReputMessageService - /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/3 mkdir OK
+2019-04-10 23:56:50 INFO ReputMessageService - /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/index mkdir OK
+2019-04-10 23:56:50 INFO ReputMessageService - /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/0 mkdir OK
+2019-04-10 23:56:50 INFO ReputMessageService - /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/1 mkdir OK
+2019-04-10 23:56:50 INFO ReputMessageService - /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/2 mkdir OK
+2019-04-10 23:56:53 INFO StoreStatsService - [STORETPS] put_tps 16.616263999202417 get_found_tps 0.0 get_miss_tps 0.03323252799840484 get_transfered_tps 0.0
+2019-04-10 23:56:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 1000, PutMessageDistributeTime [<=0ms]:948 [0~10ms]:52 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-10 23:57:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-10 23:57:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.5314113954531112 get_miss_tps 0.6144444259926599 get_transfered_tps 16.606606107909727
+2019-04-10 23:57:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-10 23:58:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-10 23:58:54 INFO StoreStatsService - [STORETPS] put_tps 16.602746094203983 get_found_tps 16.602746094203983 get_miss_tps 17.15063671531271 get_transfered_tps 16.602746094203983
+2019-04-10 23:58:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 1000, PutMessageDistributeTime [<=0ms]:952 [0~10ms]:48 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-10 23:59:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-10 23:59:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6975006227684132 get_transfered_tps 0.0
+2019-04-10 23:59:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:00:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:00:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6977671451355661 get_transfered_tps 0.0
+2019-04-11 00:00:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:01:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:01:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6978830879665017 get_transfered_tps 0.0
+2019-04-11 00:01:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:02:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:02:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6976048898780853 get_transfered_tps 0.0
+2019-04-11 00:02:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:03:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:03:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6975469598578332 get_transfered_tps 0.0
+2019-04-11 00:03:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:04:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:04:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6976860080732238 get_transfered_tps 0.0
+2019-04-11 00:04:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:05:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:05:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.697442710063102 get_transfered_tps 0.0
+2019-04-11 00:05:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:06:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:06:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6947201270345376 get_transfered_tps 0.0
+2019-04-11 00:06:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:07:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:07:56 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6953987780850043 get_transfered_tps 0.0
+2019-04-11 00:07:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:08:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:08:56 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6952376222873318 get_transfered_tps 0.0
+2019-04-11 00:08:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:09:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:09:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6956636962931063 get_transfered_tps 0.0
+2019-04-11 00:09:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:10:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:10:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6958250497017893 get_transfered_tps 0.0
+2019-04-11 00:10:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:11:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:11:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6974195476736077 get_transfered_tps 0.0
+2019-04-11 00:11:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:12:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:12:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.697616477036791 get_transfered_tps 0.0
+2019-04-11 00:12:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:13:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:13:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6975122064636131 get_transfered_tps 0.0
+2019-04-11 00:13:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:14:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:14:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6975933031042902 get_transfered_tps 0.0
+2019-04-11 00:14:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:15:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:15:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6973269134982567 get_transfered_tps 0.0
+2019-04-11 00:15:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:16:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:16:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6973732275097134 get_transfered_tps 0.0
+2019-04-11 00:16:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:17:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:17:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6976744186046512 get_transfered_tps 0.0
+2019-04-11 00:17:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:18:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:18:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6973963868225292 get_transfered_tps 0.0
+2019-04-11 00:18:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:19:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:19:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6975585450921774 get_transfered_tps 0.0
+2019-04-11 00:19:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:20:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:20:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6973269134982567 get_transfered_tps 0.0
+2019-04-11 00:20:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:21:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:21:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6973732275097134 get_transfered_tps 0.0
+2019-04-11 00:21:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:22:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:23:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:23:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6976975979268415 get_transfered_tps 0.0
+2019-04-11 00:23:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:24:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:24:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6973037587993093 get_transfered_tps 0.0
+2019-04-11 00:24:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:25:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:25:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6975585450921774 get_transfered_tps 0.0
+2019-04-11 00:25:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:26:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:26:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6973500697350069 get_transfered_tps 0.0
+2019-04-11 00:26:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:27:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:27:00 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6975817167153866 get_transfered_tps 0.0
+2019-04-11 00:27:00 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:28:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:28:01 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6975237905435703 get_transfered_tps 0.0
+2019-04-11 00:28:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:29:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:29:01 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6972806056380118 get_transfered_tps 0.0
+2019-04-11 00:29:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:30:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:30:01 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6975237905435703 get_transfered_tps 0.0
+2019-04-11 00:30:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:31:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:31:01 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6971301475592145 get_transfered_tps 0.0
+2019-04-11 00:31:01 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:32:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:32:02 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6976048898780853 get_transfered_tps 0.0
+2019-04-11 00:32:02 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:33:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:33:02 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.697651240822564 get_transfered_tps 0.0
+2019-04-11 00:33:02 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:34:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:34:02 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6977207787892884 get_transfered_tps 0.0
+2019-04-11 00:34:02 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:35:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:35:02 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.69796427087661 get_transfered_tps 0.0
+2019-04-11 00:35:02 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:36:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:36:02 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6979410738321951 get_transfered_tps 0.0
+2019-04-11 00:36:02 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:37:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:37:03 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.697407967055776 get_transfered_tps 0.0
+2019-04-11 00:37:03 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:38:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:38:03 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6974311286760432 get_transfered_tps 0.0
+2019-04-11 00:38:03 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:39:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:39:03 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6980570744760417 get_transfered_tps 0.0
+2019-04-11 00:39:03 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:40:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:40:03 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6980570744760417 get_transfered_tps 0.0
+2019-04-11 00:40:03 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:41:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:41:03 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6981034855309742 get_transfered_tps 0.0
+2019-04-11 00:41:03 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:42:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:42:03 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6977207787892884 get_transfered_tps 0.0
+2019-04-11 00:42:03 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:43:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:43:04 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6980918821886842 get_transfered_tps 0.0
+2019-04-11 00:43:04 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:44:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:44:04 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6981499027576921 get_transfered_tps 0.0
+2019-04-11 00:44:04 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:45:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:45:04 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6981499027576921 get_transfered_tps 0.0
+2019-04-11 00:45:04 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:46:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:46:04 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6980802792321117 get_transfered_tps 0.0
+2019-04-11 00:46:04 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:47:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:47:04 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6978598963179582 get_transfered_tps 0.0
+2019-04-11 00:47:04 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:48:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:48:04 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6980918821886842 get_transfered_tps 0.0
+2019-04-11 00:48:04 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:49:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:49:05 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6973848069738481 get_transfered_tps 0.0
+2019-04-11 00:49:05 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:50:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:50:05 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6982427557314093 get_transfered_tps 0.0
+2019-04-11 00:50:05 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:51:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:51:05 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6982311477590105 get_transfered_tps 0.0
+2019-04-11 00:51:05 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:52:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:52:05 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6979874694630482 get_transfered_tps 0.0
+2019-04-11 00:52:05 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:53:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:53:05 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6981382978723405 get_transfered_tps 0.0
+2019-04-11 00:53:05 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:54:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:54:06 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6978598963179582 get_transfered_tps 0.0
+2019-04-11 00:54:06 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:55:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:55:06 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6980454726765057 get_transfered_tps 0.0
+2019-04-11 00:55:06 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:56:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:56:06 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.697651240822564 get_transfered_tps 0.0
+2019-04-11 00:56:06 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:57:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:57:06 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6979062811565304 get_transfered_tps 0.0
+2019-04-11 00:57:06 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:58:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:58:06 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.698126693372783 get_transfered_tps 0.0
+2019-04-11 00:58:06 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 00:59:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 00:59:06 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6980454726765057 get_transfered_tps 0.0
+2019-04-11 00:59:06 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 01:00:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 01:00:07 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.8645628969507532 get_transfered_tps 0.0
+2019-04-11 01:00:07 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 01:01:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 01:01:07 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6979062811565304 get_transfered_tps 0.0
+2019-04-11 01:01:07 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 01:02:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 01:02:07 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6981382978723405 get_transfered_tps 0.0
+2019-04-11 01:02:07 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 01:03:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 01:03:07 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6978946843688207 get_transfered_tps 0.0
+2019-04-11 01:03:07 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 01:04:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 01:04:07 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6982775819644876 get_transfered_tps 0.0
+2019-04-11 01:04:07 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 01:05:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 01:05:07 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6979758699770665 get_transfered_tps 0.0
+2019-04-11 01:05:07 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 01:06:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 01:06:08 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6980570744760417 get_transfered_tps 0.0
+2019-04-11 01:06:08 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 01:07:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 01:07:08 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6979410738321951 get_transfered_tps 0.0
+2019-04-11 01:07:08 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 01:08:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 01:08:08 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.6979410738321951 get_transfered_tps 0.0
+2019-04-11 01:08:08 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 01:09:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 01:09:07 INFO HAClient - HAClient service end
+2019-04-11 01:09:07 INFO GroupTransferService - GroupTransferService service end
+2019-04-11 01:09:07 INFO StoreStatsService - StoreStatsService service end
+2019-04-11 01:09:07 INFO FlushRealTimeService - FlushRealTimeService service shutdown, retry 1 times OK
+2019-04-11 01:09:07 INFO FlushRealTimeService - FlushRealTimeService service end
+2019-04-11 01:09:07 INFO ReputMessageService - ReputMessageService service end
+2019-04-11 01:09:07 INFO FlushConsumeQueueService - FlushConsumeQueueService service end
+2019-04-11 01:09:07 WARN AllocateMappedFileService - AllocateMappedFileService interrupted, possibly by shutdown.
+2019-04-11 01:09:07 INFO AllocateMappedFileService - AllocateMappedFileService service end
+2019-04-11 01:09:07 INFO ShutdownHook - delete pre allocated maped file, /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/commitlog/00000000001073741824
+2019-04-11 01:09:07 INFO ShutdownHook - unmap file[REF:0] /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/commitlog/00000000001073741824 OK
+2019-04-11 01:09:07 INFO ShutdownHook - close file channel /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/commitlog/00000000001073741824 OK
+2019-04-11 01:09:07 INFO ShutdownHook - delete file[REF:0] /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/commitlog/00000000001073741824 OK, W:0 M:0, 3
+2019-04-11 01:09:07 INFO ShutdownHook - /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/abort delete OK
+2019-04-11 01:09:07 WARN TransactionalMessageCheckService - message store has shutdown, so getMessage is forbidden
+2019-04-11 22:19:26 INFO AllocateMappedFileService - AllocateMappedFileService service started
+2019-04-11 22:19:26 INFO main - last shutdown normally
+2019-04-11 22:19:26 INFO main - load /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/commitlog/00000000000000000000 OK
+2019-04-11 22:19:26 INFO main - load commit log OK
+2019-04-11 22:19:26 INFO main - load /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/0/00000000000000000000 OK
+2019-04-11 22:19:26 INFO main - load consume queue TopicTest-0 OK
+2019-04-11 22:19:26 INFO main - load /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/1/00000000000000000000 OK
+2019-04-11 22:19:26 INFO main - load consume queue TopicTest-1 OK
+2019-04-11 22:19:26 INFO main - load /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/3/00000000000000000000 OK
+2019-04-11 22:19:26 INFO main - load consume queue TopicTest-3 OK
+2019-04-11 22:19:26 INFO main - load /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/2/00000000000000000000 OK
+2019-04-11 22:19:26 INFO main - load consume queue TopicTest-2 OK
+2019-04-11 22:19:26 INFO main - load logics queue all over, OK
+2019-04-11 22:19:26 INFO main - store checkpoint file exists, /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/checkpoint
+2019-04-11 22:19:26 INFO main - store checkpoint file physicMsgTimestamp 1554911881260, 20190410235801260
+2019-04-11 22:19:26 INFO main - store checkpoint file logicsMsgTimestamp 1554911881260, 20190410235801260
+2019-04-11 22:19:26 INFO main - store checkpoint file indexMsgTimestamp 0, 19700101080000000
+2019-04-11 22:19:26 INFO main - load index file OK, /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/index/20190410235650933
+2019-04-11 22:19:26 INFO main - recover current consume queue file over,  /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/0/00000000000000000000 0 0 0
+2019-04-11 22:19:26 INFO main - recover current consume queue queue over /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/0/00000000000000000000 10000
+2019-04-11 22:19:26 INFO main - recover current consume queue file over,  /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/1/00000000000000000000 0 0 0
+2019-04-11 22:19:26 INFO main - recover current consume queue queue over /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/1/00000000000000000000 10000
+2019-04-11 22:19:26 INFO main - recover current consume queue file over,  /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/2/00000000000000000000 0 0 0
+2019-04-11 22:19:26 INFO main - recover current consume queue queue over /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/2/00000000000000000000 10000
+2019-04-11 22:19:26 INFO main - recover current consume queue file over,  /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/3/00000000000000000000 0 0 0
+2019-04-11 22:19:26 INFO main - recover current consume queue queue over /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/consumequeue/TopicTest/3/00000000000000000000 10000
+2019-04-11 22:19:26 WARN main - found a illegal magic code 0x0
+2019-04-11 22:19:26 INFO main - recover physics file end, /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/commitlog/00000000000000000000
+2019-04-11 22:19:26 WARN main - maxPhyOffsetOfConsumeQueue(359780) >= processOffset(359780), truncate dirty logic files
+2019-04-11 22:19:26 INFO main - Compute logical min offset: 0, topic: TopicTest, queueId: 0
+2019-04-11 22:19:26 INFO main - Compute logical min offset: 0, topic: TopicTest, queueId: 1
+2019-04-11 22:19:26 INFO main - Compute logical min offset: 0, topic: TopicTest, queueId: 2
+2019-04-11 22:19:26 INFO main - Compute logical min offset: 0, topic: TopicTest, queueId: 3
+2019-04-11 22:19:26 INFO main - load over, and the max phy offset = 359780
+2019-04-11 22:19:27 INFO main - [SetReputOffset] maxPhysicalPosInLogicQueue=359780 clMinOffset=0 clMaxOffset=359780 clConfirmedOffset=-1
+2019-04-11 22:19:27 INFO main - Compute logical min offset: 0, topic: TopicTest, queueId: 0
+2019-04-11 22:19:27 INFO main - Compute logical min offset: 0, topic: TopicTest, queueId: 1
+2019-04-11 22:19:27 INFO main - Compute logical min offset: 0, topic: TopicTest, queueId: 2
+2019-04-11 22:19:27 INFO ReputMessageService - ReputMessageService service started
+2019-04-11 22:19:27 INFO main - Compute logical min offset: 0, topic: TopicTest, queueId: 3
+2019-04-11 22:19:27 INFO AcceptSocketService - AcceptSocketService service started
+2019-04-11 22:19:27 INFO GroupTransferService - GroupTransferService service started
+2019-04-11 22:19:27 INFO HAClient - HAClient service started
+2019-04-11 22:19:27 INFO FlushConsumeQueueService - FlushConsumeQueueService service started
+2019-04-11 22:19:27 INFO FlushRealTimeService - FlushRealTimeService service started
+2019-04-11 22:19:27 INFO StoreStatsService - StoreStatsService service started
+2019-04-11 22:19:27 INFO main - /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/abort create OK
+2019-04-11 22:20:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:20:26 INFO StoreStatsService - [STORETPS] put_tps  get_found_tps  get_miss_tps  get_transfered_tps 
+2019-04-11 22:20:26 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:21:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:21:26 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321100612743063 get_transfered_tps 0.0
+2019-04-11 22:21:26 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:22:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:22:26 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323087147960455 get_transfered_tps 0.0
+2019-04-11 22:22:26 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:23:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:23:26 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033229215125938724 get_transfered_tps 0.0
+2019-04-11 22:23:26 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:24:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:24:27 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033228663044742396 get_transfered_tps 0.0
+2019-04-11 22:24:27 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:25:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:25:27 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.06644187166752487 get_transfered_tps 0.0
+2019-04-11 22:25:27 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:26:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:26:27 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033225902913911684 get_transfered_tps 0.0
+2019-04-11 22:26:27 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:27:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:27:27 INFO StoreStatsService - [STORETPS] put_tps 33.22203950100497 get_found_tps 0.0 get_miss_tps 0.03322203950100497 get_transfered_tps 0.0
+2019-04-11 22:27:27 INFO StoreStatsService - [PAGECACHERT] TotalPut 2000, PutMessageDistributeTime [<=0ms]:1912 [0~10ms]:77 [10~50ms]:1 [50~100ms]:10 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:28:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:28:27 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321045465112417 get_transfered_tps 0.0
+2019-04-11 22:28:27 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:29:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:29:28 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033223143241582084 get_transfered_tps 0.0
+2019-04-11 22:29:28 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:30:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:30:28 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324633874694549 get_transfered_tps 0.0
+2019-04-11 22:30:28 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:31:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:31:28 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324136555529701 get_transfered_tps 0.0
+2019-04-11 22:31:28 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:32:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:32:28 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033229215125938724 get_transfered_tps 0.0
+2019-04-11 22:32:28 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:33:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:33:28 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321928047038501 get_transfered_tps 0.0
+2019-04-11 22:33:28 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:34:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:34:29 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322755893738266 get_transfered_tps 0.0
+2019-04-11 22:34:29 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:35:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:35:29 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321928047038501 get_transfered_tps 0.0
+2019-04-11 22:35:29 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:36:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:36:29 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320824892903397 get_transfered_tps 0.0
+2019-04-11 22:36:29 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:37:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:37:29 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033233080208039084 get_transfered_tps 0.0
+2019-04-11 22:37:29 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:38:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:38:29 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320769754429077 get_transfered_tps 0.0
+2019-04-11 22:38:29 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:39:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:39:30 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322755893738266 get_transfered_tps 0.0
+2019-04-11 22:39:30 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:40:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:40:30 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033233080208039084 get_transfered_tps 0.0
+2019-04-11 22:40:30 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:41:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:41:30 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322755893738266 get_transfered_tps 0.0
+2019-04-11 22:41:30 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:42:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:42:30 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033234736947057066 get_transfered_tps 0.0
+2019-04-11 22:42:30 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:43:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:43:30 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033220384027639355 get_transfered_tps 0.0
+2019-04-11 22:43:30 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:44:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:44:30 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033236946189384116 get_transfered_tps 0.0
+2019-04-11 22:44:30 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:45:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:45:31 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323142363418849 get_transfered_tps 0.0
+2019-04-11 22:45:31 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:46:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:46:31 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321872871925191 get_transfered_tps 0.0
+2019-04-11 22:46:31 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:47:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:47:31 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033229767225480586 get_transfered_tps 0.0
+2019-04-11 22:47:31 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:48:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:48:31 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033225902913911684 get_transfered_tps 0.0
+2019-04-11 22:48:31 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:49:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:49:31 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321817698644698 get_transfered_tps 0.0
+2019-04-11 22:49:31 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:50:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:50:32 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332242470555011 get_transfered_tps 0.0
+2019-04-11 22:50:32 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:51:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:51:32 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323031934336889 get_transfered_tps 0.0
+2019-04-11 22:51:32 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:52:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:52:32 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033233080208039084 get_transfered_tps 0.0
+2019-04-11 22:52:32 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:53:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:53:32 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033234184682364276 get_transfered_tps 0.0
+2019-04-11 22:53:32 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:54:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:54:32 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033236946189384116 get_transfered_tps 0.0
+2019-04-11 22:54:32 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:55:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:55:33 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324523346465201 get_transfered_tps 0.0
+2019-04-11 22:55:33 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:56:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:56:33 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332242470555011 get_transfered_tps 0.0
+2019-04-11 22:56:33 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:57:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:57:33 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321210913499061 get_transfered_tps 0.0
+2019-04-11 22:57:33 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:58:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:58:33 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03319942896982172 get_transfered_tps 0.0
+2019-04-11 22:58:33 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 22:59:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 22:59:33 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321486697445777 get_transfered_tps 0.0
+2019-04-11 22:59:33 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:00:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:00:34 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332236951393734 get_transfered_tps 0.0
+2019-04-11 23:00:34 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:01:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:01:34 INFO StoreStatsService - [STORETPS] put_tps 16.59606279591328 get_found_tps 0.0 get_miss_tps 0.033225350942769336 get_transfered_tps 0.0
+2019-04-11 23:01:34 INFO StoreStatsService - [PAGECACHERT] TotalPut 999, PutMessageDistributeTime [<=0ms]:965 [0~10ms]:24 [10~50ms]:2 [50~100ms]:8 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:02:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:02:34 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322755893738266 get_transfered_tps 0.0
+2019-04-11 23:02:34 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:03:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:03:34 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320990319313219 get_transfered_tps 0.0
+2019-04-11 23:03:34 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:04:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:04:34 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033225902913911684 get_transfered_tps 0.0
+2019-04-11 23:04:34 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:05:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:05:35 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033225350942769336 get_transfered_tps 0.0
+2019-04-11 23:05:35 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:06:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:06:35 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033220384027639355 get_transfered_tps 0.0
+2019-04-11 23:06:35 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:07:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:07:35 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322203950100497 get_transfered_tps 0.0
+2019-04-11 23:07:35 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:08:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:08:35 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320604349991699 get_transfered_tps 0.0
+2019-04-11 23:08:35 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:09:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:09:35 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322755893738266 get_transfered_tps 0.0
+2019-04-11 23:09:35 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:10:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:10:36 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033220384027639355 get_transfered_tps 0.0
+2019-04-11 23:10:36 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:11:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:11:36 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033211557622052475 get_transfered_tps 0.0
+2019-04-11 23:11:36 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:12:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:12:36 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321762527196931 get_transfered_tps 0.0
+2019-04-11 23:12:36 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:13:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:13:36 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321762527196931 get_transfered_tps 0.0
+2019-04-11 23:13:36 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:14:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:14:36 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033226454903394084 get_transfered_tps 0.0
+2019-04-11 23:14:36 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:15:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:15:37 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321100612743063 get_transfered_tps 0.0
+2019-04-11 23:15:37 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:16:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:16:37 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322259136212625 get_transfered_tps 0.0
+2019-04-11 23:16:37 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:17:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:17:37 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332242470555011 get_transfered_tps 0.0
+2019-04-11 23:17:37 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:18:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:18:37 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033220935833762434 get_transfered_tps 0.0
+2019-04-11 23:18:37 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:19:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:19:37 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033224798989966116 get_transfered_tps 0.0
+2019-04-11 23:19:37 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:20:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:20:38 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320273590543861 get_transfered_tps 0.0
+2019-04-11 23:20:38 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:21:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:21:38 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03319998008001195 get_transfered_tps 0.0
+2019-04-11 23:21:38 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:22:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:22:38 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033221487658217336 get_transfered_tps 0.0
+2019-04-11 23:22:38 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:23:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:23:38 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321486697445777 get_transfered_tps 0.0
+2019-04-11 23:23:38 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:24:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:24:39 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332016335203692 get_transfered_tps 0.0
+2019-04-11 23:24:39 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:25:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:25:39 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332021847037535 get_transfered_tps 0.0
+2019-04-11 23:25:39 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:26:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:26:39 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321321221581945 get_transfered_tps 0.0
+2019-04-11 23:26:39 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:27:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:27:39 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321321221581945 get_transfered_tps 0.0
+2019-04-11 23:27:39 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:28:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:28:39 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033225350942769336 get_transfered_tps 0.0
+2019-04-11 23:28:39 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:29:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:29:40 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320935175345377 get_transfered_tps 0.0
+2019-04-11 23:29:40 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:30:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:30:40 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321045465112417 get_transfered_tps 0.0
+2019-04-11 23:30:40 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:31:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:31:40 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332242470555011 get_transfered_tps 0.0
+2019-04-11 23:31:40 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:32:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:32:40 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321376378371197 get_transfered_tps 0.0
+2019-04-11 23:32:40 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:33:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:33:41 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320494089520521 get_transfered_tps 0.0
+2019-04-11 23:33:41 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:34:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:34:41 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033220384027639355 get_transfered_tps 0.0
+2019-04-11 23:34:41 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:35:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:35:41 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033234184682364276 get_transfered_tps 0.0
+2019-04-11 23:35:41 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:36:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:36:41 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321762527196931 get_transfered_tps 0.0
+2019-04-11 23:36:41 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:37:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:37:41 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033204389620307806 get_transfered_tps 0.0
+2019-04-11 23:37:41 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:38:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:38:42 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321707357581797 get_transfered_tps 0.0
+2019-04-11 23:38:42 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:39:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:39:42 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332242470555011 get_transfered_tps 0.0
+2019-04-11 23:39:42 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:40:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:40:42 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033223143241582084 get_transfered_tps 0.0
+2019-04-11 23:40:42 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:41:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:41:42 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320604349991699 get_transfered_tps 0.0
+2019-04-11 23:41:42 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:42:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:42:42 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321321221581945 get_transfered_tps 0.0
+2019-04-11 23:42:42 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:43:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:43:43 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320549218840796 get_transfered_tps 0.0
+2019-04-11 23:43:43 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:44:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:44:43 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321321221581945 get_transfered_tps 0.0
+2019-04-11 23:44:43 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:45:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:45:43 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332236951393734 get_transfered_tps 0.0
+2019-04-11 23:45:43 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:46:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:46:43 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033220935833762434 get_transfered_tps 0.0
+2019-04-11 23:46:43 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:47:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:47:43 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323031934336889 get_transfered_tps 0.0
+2019-04-11 23:47:43 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:48:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:48:44 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321376378371197 get_transfered_tps 0.0
+2019-04-11 23:48:44 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:49:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:49:44 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321928047038501 get_transfered_tps 0.0
+2019-04-11 23:49:44 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:50:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:50:44 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321266066624597 get_transfered_tps 0.0
+2019-04-11 23:50:44 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:51:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:51:45 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03251239535072747 get_transfered_tps 0.0
+2019-04-11 23:51:45 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:52:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:52:45 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033229215125938724 get_transfered_tps 0.0
+2019-04-11 23:52:45 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:53:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:53:45 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033225350942769336 get_transfered_tps 0.0
+2019-04-11 23:53:45 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:54:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:54:45 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321100612743063 get_transfered_tps 0.0
+2019-04-11 23:54:45 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:55:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:55:45 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033206594829733184 get_transfered_tps 0.0
+2019-04-11 23:55:45 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:56:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:56:46 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033234736947057066 get_transfered_tps 0.0
+2019-04-11 23:56:46 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:57:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:57:46 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332236951393734 get_transfered_tps 0.0
+2019-04-11 23:57:46 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:58:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:58:46 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323142363418849 get_transfered_tps 0.0
+2019-04-11 23:58:46 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-11 23:59:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-11 23:59:46 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03319942896982172 get_transfered_tps 0.0
+2019-04-11 23:59:46 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:00:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:00:47 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03319667369329593 get_transfered_tps 0.0
+2019-04-12 00:00:47 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:01:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:01:47 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03319226620197494 get_transfered_tps 0.0
+2019-04-12 00:01:47 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:02:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:02:47 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321928047038501 get_transfered_tps 0.0
+2019-04-12 00:02:47 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:03:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:03:47 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324412825584681 get_transfered_tps 0.0
+2019-04-12 00:03:47 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:04:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:04:47 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323915572544457 get_transfered_tps 0.0
+2019-04-12 00:04:47 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:05:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:05:48 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322203950100497 get_transfered_tps 0.0
+2019-04-12 00:05:48 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:06:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:06:48 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033238050920694005 get_transfered_tps 0.0
+2019-04-12 00:06:48 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:07:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:07:48 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323142363418849 get_transfered_tps 0.0
+2019-04-12 00:07:48 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:08:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:08:48 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033239708155362396 get_transfered_tps 0.0
+2019-04-12 00:08:48 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:09:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:09:48 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033124648050614464 get_transfered_tps 0.0
+2019-04-12 00:09:48 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:10:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:10:49 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03313672211544834 get_transfered_tps 0.0
+2019-04-12 00:10:49 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:11:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:11:49 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03310819758972322 get_transfered_tps 0.0
+2019-04-12 00:11:49 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:12:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:12:49 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03318896135145451 get_transfered_tps 0.0
+2019-04-12 00:12:49 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:13:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:13:50 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033220935833762434 get_transfered_tps 0.0
+2019-04-12 00:13:50 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:14:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:14:50 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332408130702877 get_transfered_tps 0.0
+2019-04-12 00:14:50 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:15:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:15:50 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321707357581797 get_transfered_tps 0.0
+2019-04-12 00:15:50 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:16:50 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033229767225480586 get_transfered_tps 0.0
+2019-04-12 00:16:50 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:17:50 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033236393851267136 get_transfered_tps 0.0
+2019-04-12 00:17:50 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:18:51 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324523346465201 get_transfered_tps 0.0
+2019-04-12 00:18:51 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:19:51 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324799680819231 get_transfered_tps 0.0
+2019-04-12 00:19:51 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:20:51 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321928047038501 get_transfered_tps 0.0
+2019-04-12 00:20:51 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:21:00 WARN AdminBrokerThread_11 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:21:51 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033208800332088 get_transfered_tps 0.0
+2019-04-12 00:21:51 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:22:00 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:22:51 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321210913499061 get_transfered_tps 0.0
+2019-04-12 00:22:51 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:23:00 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:23:52 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033220935833762434 get_transfered_tps 0.0
+2019-04-12 00:23:52 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:24:00 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:24:52 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321541859731287 get_transfered_tps 0.0
+2019-04-12 00:24:52 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:25:00 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:25:52 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320769754429077 get_transfered_tps 0.0
+2019-04-12 00:25:52 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:26:00 WARN AdminBrokerThread_13 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:26:52 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321597023849066 get_transfered_tps 0.0
+2019-04-12 00:26:52 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:27:00 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:27:52 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321210913499061 get_transfered_tps 0.0
+2019-04-12 00:27:52 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:28:00 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:28:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321486697445777 get_transfered_tps 0.0
+2019-04-12 00:28:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:29:00 WARN AdminBrokerThread_11 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:29:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322811098189068 get_transfered_tps 0.0
+2019-04-12 00:29:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:30:00 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:30:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0332242470555011 get_transfered_tps 0.0
+2019-04-12 00:30:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:31:00 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:31:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033229215125938724 get_transfered_tps 0.0
+2019-04-12 00:31:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:32:00 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:32:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321707357581797 get_transfered_tps 0.0
+2019-04-12 00:32:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:33:00 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:33:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033241918058671986 get_transfered_tps 0.0
+2019-04-12 00:33:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:34:00 WARN AdminBrokerThread_13 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:34:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321928047038501 get_transfered_tps 0.0
+2019-04-12 00:34:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:35:00 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:35:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03311916274756574 get_transfered_tps 0.0
+2019-04-12 00:35:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:36:00 WARN AdminBrokerThread_1 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:36:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03309450134860093 get_transfered_tps 0.0
+2019-04-12 00:36:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:37:00 WARN AdminBrokerThread_11 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:37:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03311367926090268 get_transfered_tps 0.0
+2019-04-12 00:37:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:38:00 WARN AdminBrokerThread_5 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:38:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0331394674487581 get_transfered_tps 0.0
+2019-04-12 00:38:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:39:00 WARN AdminBrokerThread_15 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:39:56 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033108745675170095 get_transfered_tps 0.0
+2019-04-12 00:39:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:40:00 WARN AdminBrokerThread_9 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:40:56 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.0331054574346581 get_transfered_tps 0.0
+2019-04-12 00:40:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:41:00 WARN AdminBrokerThread_3 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:41:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033101074129855516 get_transfered_tps 0.0
+2019-04-12 00:41:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:42:00 WARN AdminBrokerThread_13 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:42:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03318400530944085 get_transfered_tps 0.0
+2019-04-12 00:42:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:43:00 WARN AdminBrokerThread_7 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:46:48 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.007046024632902117 get_transfered_tps 0.0
+2019-04-12 00:46:48 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:47:48 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033236393851267136 get_transfered_tps 0.0
+2019-04-12 00:47:48 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:48:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:48:48 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033206594829733184 get_transfered_tps 0.0
+2019-04-12 00:48:48 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:49:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:49:48 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321652189799206 get_transfered_tps 0.0
+2019-04-12 00:49:48 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:50:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:50:48 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320328712542542 get_transfered_tps 0.0
+2019-04-12 00:50:48 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:51:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:51:49 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033226454903394084 get_transfered_tps 0.0
+2019-04-12 00:51:49 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:52:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:52:49 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322755893738266 get_transfered_tps 0.0
+2019-04-12 00:52:49 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:53:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:53:49 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033225350942769336 get_transfered_tps 0.0
+2019-04-12 00:53:49 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:54:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:54:49 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033229767225480586 get_transfered_tps 0.0
+2019-04-12 00:54:49 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:55:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:55:49 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033228663044742396 get_transfered_tps 0.0
+2019-04-12 00:55:49 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:56:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:56:49 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033233080208039084 get_transfered_tps 0.0
+2019-04-12 00:56:49 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:57:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:57:50 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324633874694549 get_transfered_tps 0.0
+2019-04-12 00:57:50 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:58:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:58:50 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324854953202667 get_transfered_tps 0.0
+2019-04-12 00:58:50 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 00:59:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 00:59:50 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033211557622052475 get_transfered_tps 0.0
+2019-04-12 00:59:50 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:00:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:00:50 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320494089520521 get_transfered_tps 0.0
+2019-04-12 01:00:50 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:01:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:01:50 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323087147960455 get_transfered_tps 0.0
+2019-04-12 01:01:50 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:02:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:02:51 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03270057716518696 get_transfered_tps 0.0
+2019-04-12 01:02:51 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:03:01 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:03:51 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322811098189068 get_transfered_tps 0.0
+2019-04-12 01:03:51 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:04:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:04:51 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323252799840484 get_transfered_tps 0.0
+2019-04-12 01:04:51 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:05:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:05:51 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033226454903394084 get_transfered_tps 0.0
+2019-04-12 01:05:51 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:06:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:06:51 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323915572544457 get_transfered_tps 0.0
+2019-04-12 01:06:51 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:07:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:07:51 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03324302312052258 get_transfered_tps 0.0
+2019-04-12 01:07:51 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:08:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:08:52 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033239708155362396 get_transfered_tps 0.0
+2019-04-12 01:08:52 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:09:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:09:52 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321100612743063 get_transfered_tps 0.0
+2019-04-12 01:09:52 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:10:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:10:52 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321045465112417 get_transfered_tps 0.0
+2019-04-12 01:10:52 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:11:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:11:52 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321597023849066 get_transfered_tps 0.0
+2019-04-12 01:11:52 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:12:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:12:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321266066624597 get_transfered_tps 0.0
+2019-04-12 01:12:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:13:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:13:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321817698644698 get_transfered_tps 0.0
+2019-04-12 01:13:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:14:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:14:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033224798989966116 get_transfered_tps 0.0
+2019-04-12 01:14:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:15:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:15:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033229767225480586 get_transfered_tps 0.0
+2019-04-12 01:15:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:16:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:16:53 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322700691121744 get_transfered_tps 0.0
+2019-04-12 01:16:53 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:17:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:17:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321266066624597 get_transfered_tps 0.0
+2019-04-12 01:17:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:18:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:18:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323087147960455 get_transfered_tps 0.0
+2019-04-12 01:18:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:19:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:19:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033228663044742396 get_transfered_tps 0.0
+2019-04-12 01:19:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:20:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:20:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322755893738266 get_transfered_tps 0.0
+2019-04-12 01:20:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:21:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:21:54 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322203950100497 get_transfered_tps 0.0
+2019-04-12 01:21:54 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:22:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:22:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320935175345377 get_transfered_tps 0.0
+2019-04-12 01:22:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:23:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:23:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320935175345377 get_transfered_tps 0.0
+2019-04-12 01:23:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:24:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:24:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321541859731287 get_transfered_tps 0.0
+2019-04-12 01:24:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:25:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:25:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320769754429077 get_transfered_tps 0.0
+2019-04-12 01:25:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:26:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:26:55 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033241918058671986 get_transfered_tps 0.0
+2019-04-12 01:26:55 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:27:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:27:56 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321597023849066 get_transfered_tps 0.0
+2019-04-12 01:27:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:28:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:28:56 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033236393851267136 get_transfered_tps 0.0
+2019-04-12 01:28:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:29:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:29:56 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322203950100497 get_transfered_tps 0.0
+2019-04-12 01:29:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:30:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:30:56 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321762527196931 get_transfered_tps 0.0
+2019-04-12 01:30:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:31:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:31:56 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321817698644698 get_transfered_tps 0.0
+2019-04-12 01:31:56 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:32:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:32:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03322259136212625 get_transfered_tps 0.0
+2019-04-12 01:32:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:33:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:33:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033204389620307806 get_transfered_tps 0.0
+2019-04-12 01:33:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:34:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:34:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321210913499061 get_transfered_tps 0.0
+2019-04-12 01:34:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:35:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:35:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033228663044742396 get_transfered_tps 0.0
+2019-04-12 01:35:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:36:00 WARN AdminBrokerThread_8 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:36:57 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03323087147960455 get_transfered_tps 0.0
+2019-04-12 01:36:57 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:37:00 WARN AdminBrokerThread_2 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:37:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033238603313888754 get_transfered_tps 0.0
+2019-04-12 01:37:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:38:00 WARN AdminBrokerThread_12 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:38:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03319777574902481 get_transfered_tps 0.0
+2019-04-12 01:38:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:39:00 WARN AdminBrokerThread_6 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:39:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03321431536992444 get_transfered_tps 0.0
+2019-04-12 01:39:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:40:00 WARN AdminBrokerThread_16 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:40:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320990319313219 get_transfered_tps 0.0
+2019-04-12 01:40:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:41:00 WARN AdminBrokerThread_10 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:41:58 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.03320824892903397 get_transfered_tps 0.0
+2019-04-12 01:41:58 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:42:00 WARN AdminBrokerThread_4 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:42:59 INFO StoreStatsService - [STORETPS] put_tps 0.0 get_found_tps 0.0 get_miss_tps 0.033221487658217336 get_transfered_tps 0.0
+2019-04-12 01:42:59 INFO StoreStatsService - [PAGECACHERT] TotalPut 0, PutMessageDistributeTime [<=0ms]:0 [0~10ms]:0 [10~50ms]:0 [50~100ms]:0 [100~200ms]:0 [200~500ms]:0 [500ms~1s]:0 [1~2s]:0 [2~3s]:0 [3~4s]:0 [4~5s]:0 [5~10s]:0 [10s~]:0 
+2019-04-12 01:43:00 WARN AdminBrokerThread_14 - selectMappedBuffer request pos invalid, request pos: 0, size: 8388608, fileFromOffset: 0
+2019-04-12 01:43:11 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-12 01:43:11 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-12 01:43:11 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-12 01:43:21 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-12 01:43:21 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-12 01:43:21 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-12 01:43:31 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-12 01:43:31 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-12 01:43:31 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-12 01:43:41 INFO StoreScheduledThread1 - physic disk maybe full soon, so reclaim space, -1.0
+2019-04-12 01:43:41 INFO StoreScheduledThread1 - begin to delete before 48 hours file. timeup: false spacefull: true manualDeleteFileSeveralTimes: 0 cleanAtOnce: false
+2019-04-12 01:43:41 WARN StoreScheduledThread1 - disk space will be full soon, but delete file failed.
+2019-04-12 01:43:43 INFO HAClient - HAClient service end
+2019-04-12 01:43:43 INFO GroupTransferService - GroupTransferService service end
+2019-04-12 01:43:43 INFO StoreStatsService - StoreStatsService service end
+2019-04-12 01:43:43 INFO FlushRealTimeService - FlushRealTimeService service shutdown, retry 1 times OK
+2019-04-12 01:43:43 INFO FlushRealTimeService - FlushRealTimeService service end
+2019-04-12 01:43:43 INFO ReputMessageService - ReputMessageService service end
+2019-04-12 01:43:43 INFO FlushConsumeQueueService - FlushConsumeQueueService service end
+2019-04-12 01:43:43 WARN AllocateMappedFileService - AllocateMappedFileService interrupted, possibly by shutdown.
+2019-04-12 01:43:43 INFO AllocateMappedFileService - AllocateMappedFileService service end
+2019-04-12 01:43:43 INFO ShutdownHook - /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/abort delete Failed
+2019-04-12 01:43:43 WARN TransactionalMessageCheckService - message store has shutdown, so getMessage is forbidden

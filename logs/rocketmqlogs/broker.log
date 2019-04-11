@@ -1,0 +1,1637 @@
+2019-04-10 23:52:52 INFO main - rocketmqHome=/Users/liwenguang/SourceCode/Github/awesome-rocketmq
+2019-04-10 23:52:52 INFO main - namesrvAddr=127.0.0.1:9876
+2019-04-10 23:52:52 INFO main - brokerIP1=192.168.1.108
+2019-04-10 23:52:52 INFO main - brokerIP2=192.168.1.108
+2019-04-10 23:52:52 INFO main - brokerName=broker-a
+2019-04-10 23:52:52 INFO main - brokerClusterName=DefaultCluster
+2019-04-10 23:52:52 INFO main - brokerId=0
+2019-04-10 23:52:52 INFO main - brokerPermission=6
+2019-04-10 23:52:52 INFO main - defaultTopicQueueNums=8
+2019-04-10 23:52:52 INFO main - autoCreateTopicEnable=true
+2019-04-10 23:52:52 INFO main - clusterTopicEnable=true
+2019-04-10 23:52:52 INFO main - brokerTopicEnable=true
+2019-04-10 23:52:52 INFO main - autoCreateSubscriptionGroup=true
+2019-04-10 23:52:52 INFO main - messageStorePlugIn=
+2019-04-10 23:52:52 INFO main - msgTraceTopicName=RMQ_SYS_TRACE_TOPIC
+2019-04-10 23:52:52 INFO main - traceTopicEnable=false
+2019-04-10 23:52:52 INFO main - sendMessageThreadPoolNums=1
+2019-04-10 23:52:52 INFO main - pullMessageThreadPoolNums=32
+2019-04-10 23:52:52 INFO main - queryMessageThreadPoolNums=16
+2019-04-10 23:52:52 INFO main - adminBrokerThreadPoolNums=16
+2019-04-10 23:52:52 INFO main - clientManageThreadPoolNums=32
+2019-04-10 23:52:52 INFO main - consumerManageThreadPoolNums=32
+2019-04-10 23:52:52 INFO main - heartbeatThreadPoolNums=8
+2019-04-10 23:52:52 INFO main - endTransactionThreadPoolNums=24
+2019-04-10 23:52:52 INFO main - flushConsumerOffsetInterval=5000
+2019-04-10 23:52:52 INFO main - flushConsumerOffsetHistoryInterval=60000
+2019-04-10 23:52:52 INFO main - rejectTransactionMessage=false
+2019-04-10 23:52:52 INFO main - fetchNamesrvAddrByAddressServer=false
+2019-04-10 23:52:52 INFO main - sendThreadPoolQueueCapacity=10000
+2019-04-10 23:52:52 INFO main - pullThreadPoolQueueCapacity=100000
+2019-04-10 23:52:52 INFO main - queryThreadPoolQueueCapacity=20000
+2019-04-10 23:52:52 INFO main - clientManagerThreadPoolQueueCapacity=1000000
+2019-04-10 23:52:52 INFO main - consumerManagerThreadPoolQueueCapacity=1000000
+2019-04-10 23:52:52 INFO main - heartbeatThreadPoolQueueCapacity=50000
+2019-04-10 23:52:52 INFO main - endTransactionPoolQueueCapacity=100000
+2019-04-10 23:52:52 INFO main - filterServerNums=0
+2019-04-10 23:52:52 INFO main - longPollingEnable=true
+2019-04-10 23:52:52 INFO main - shortPollingTimeMills=1000
+2019-04-10 23:52:52 INFO main - notifyConsumerIdsChangedEnable=true
+2019-04-10 23:52:52 INFO main - highSpeedMode=false
+2019-04-10 23:52:52 INFO main - commercialEnable=true
+2019-04-10 23:52:52 INFO main - commercialTimerCount=1
+2019-04-10 23:52:52 INFO main - commercialTransCount=1
+2019-04-10 23:52:52 INFO main - commercialBigCount=1
+2019-04-10 23:52:52 INFO main - commercialBaseCount=1
+2019-04-10 23:52:52 INFO main - transferMsgByHeap=true
+2019-04-10 23:52:52 INFO main - maxDelayTime=40
+2019-04-10 23:52:52 INFO main - regionId=DefaultRegion
+2019-04-10 23:52:52 INFO main - registerBrokerTimeoutMills=6000
+2019-04-10 23:52:52 INFO main - slaveReadEnable=false
+2019-04-10 23:52:52 INFO main - disableConsumeIfConsumerReadSlowly=false
+2019-04-10 23:52:52 INFO main - consumerFallbehindThreshold=17179869184
+2019-04-10 23:52:52 INFO main - brokerFastFailureEnable=true
+2019-04-10 23:52:52 INFO main - waitTimeMillsInSendQueue=200
+2019-04-10 23:52:52 INFO main - waitTimeMillsInPullQueue=5000
+2019-04-10 23:52:52 INFO main - waitTimeMillsInHeartbeatQueue=31000
+2019-04-10 23:52:52 INFO main - waitTimeMillsInTransactionQueue=3000
+2019-04-10 23:52:52 INFO main - startAcceptSendRequestTimeStamp=0
+2019-04-10 23:52:52 INFO main - traceOn=true
+2019-04-10 23:52:52 INFO main - enableCalcFilterBitMap=false
+2019-04-10 23:52:52 INFO main - expectConsumerNumUseFilter=32
+2019-04-10 23:52:52 INFO main - maxErrorRateOfBloomFilter=20
+2019-04-10 23:52:52 INFO main - filterDataCleanTimeSpan=86400000
+2019-04-10 23:52:52 INFO main - filterSupportRetry=false
+2019-04-10 23:52:52 INFO main - enablePropertyFilter=false
+2019-04-10 23:52:52 INFO main - compressedRegister=false
+2019-04-10 23:52:52 INFO main - forceRegister=true
+2019-04-10 23:52:52 INFO main - registerNameServerPeriod=30000
+2019-04-10 23:52:52 INFO main - transactionTimeOut=6000
+2019-04-10 23:52:52 INFO main - transactionCheckMax=15
+2019-04-10 23:52:52 INFO main - transactionCheckInterval=60000
+2019-04-10 23:52:52 INFO main - aclEnable=false
+2019-04-10 23:52:52 INFO main - listenPort=10911
+2019-04-10 23:52:52 INFO main - serverWorkerThreads=8
+2019-04-10 23:52:52 INFO main - serverCallbackExecutorThreads=0
+2019-04-10 23:52:52 INFO main - serverSelectorThreads=3
+2019-04-10 23:52:52 INFO main - serverOnewaySemaphoreValue=256
+2019-04-10 23:52:52 INFO main - serverAsyncSemaphoreValue=64
+2019-04-10 23:52:52 INFO main - serverChannelMaxIdleTimeSeconds=120
+2019-04-10 23:52:52 INFO main - serverSocketSndBufSize=131072
+2019-04-10 23:52:52 INFO main - serverSocketRcvBufSize=131072
+2019-04-10 23:52:52 INFO main - serverPooledByteBufAllocatorEnable=true
+2019-04-10 23:52:52 INFO main - useEpollNativeSelector=false
+2019-04-10 23:52:52 INFO main - clientWorkerThreads=4
+2019-04-10 23:52:52 INFO main - clientCallbackExecutorThreads=8
+2019-04-10 23:52:52 INFO main - clientOnewaySemaphoreValue=65535
+2019-04-10 23:52:52 INFO main - clientAsyncSemaphoreValue=65535
+2019-04-10 23:52:52 INFO main - connectTimeoutMillis=3000
+2019-04-10 23:52:52 INFO main - channelNotActiveInterval=60000
+2019-04-10 23:52:52 INFO main - clientChannelMaxIdleTimeSeconds=120
+2019-04-10 23:52:52 INFO main - clientSocketSndBufSize=131072
+2019-04-10 23:52:52 INFO main - clientSocketRcvBufSize=131072
+2019-04-10 23:52:52 INFO main - clientPooledByteBufAllocatorEnable=false
+2019-04-10 23:52:52 INFO main - clientCloseSocketIfTimeout=false
+2019-04-10 23:52:52 INFO main - useTLS=false
+2019-04-10 23:52:52 INFO main - storePathRootDir=/Users/liwenguang/SourceCode/Github/awesome-rocketmq/store
+2019-04-10 23:52:52 INFO main - storePathCommitLog=/Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/commitlog
+2019-04-10 23:52:52 INFO main - mapedFileSizeCommitLog=1073741824
+2019-04-10 23:52:52 INFO main - mapedFileSizeConsumeQueue=6000000
+2019-04-10 23:52:52 INFO main - enableConsumeQueueExt=false
+2019-04-10 23:52:52 INFO main - mappedFileSizeConsumeQueueExt=50331648
+2019-04-10 23:52:52 INFO main - bitMapLengthConsumeQueueExt=64
+2019-04-10 23:52:52 INFO main - flushIntervalCommitLog=500
+2019-04-10 23:52:52 INFO main - commitIntervalCommitLog=200
+2019-04-10 23:52:52 INFO main - useReentrantLockWhenPutMessage=false
+2019-04-10 23:52:52 INFO main - flushCommitLogTimed=false
+2019-04-10 23:52:52 INFO main - flushIntervalConsumeQueue=1000
+2019-04-10 23:52:52 INFO main - cleanResourceInterval=10000
+2019-04-10 23:52:52 INFO main - deleteCommitLogFilesInterval=100
+2019-04-10 23:52:52 INFO main - deleteConsumeQueueFilesInterval=100
+2019-04-10 23:52:52 INFO main - destroyMapedFileIntervalForcibly=120000
+2019-04-10 23:52:52 INFO main - redeleteHangedFileInterval=120000
+2019-04-10 23:52:52 INFO main - deleteWhen=04
+2019-04-10 23:52:52 INFO main - diskMaxUsedSpaceRatio=75
+2019-04-10 23:52:52 INFO main - fileReservedTime=48
+2019-04-10 23:52:52 INFO main - putMsgIndexHightWater=600000
+2019-04-10 23:52:52 INFO main - maxMessageSize=4194304
+2019-04-10 23:52:52 INFO main - checkCRCOnRecover=true
+2019-04-10 23:52:52 INFO main - flushCommitLogLeastPages=4
+2019-04-10 23:52:52 INFO main - commitCommitLogLeastPages=4
+2019-04-10 23:52:52 INFO main - flushLeastPagesWhenWarmMapedFile=4096
+2019-04-10 23:52:52 INFO main - flushConsumeQueueLeastPages=2
+2019-04-10 23:52:52 INFO main - flushCommitLogThoroughInterval=10000
+2019-04-10 23:52:52 INFO main - commitCommitLogThoroughInterval=200
+2019-04-10 23:52:52 INFO main - flushConsumeQueueThoroughInterval=60000
+2019-04-10 23:52:52 INFO main - maxTransferBytesOnMessageInMemory=262144
+2019-04-10 23:52:52 INFO main - maxTransferCountOnMessageInMemory=32
+2019-04-10 23:52:52 INFO main - maxTransferBytesOnMessageInDisk=65536
+2019-04-10 23:52:52 INFO main - maxTransferCountOnMessageInDisk=8
+2019-04-10 23:52:52 INFO main - accessMessageInMemoryMaxRatio=40
+2019-04-10 23:52:52 INFO main - messageIndexEnable=true
+2019-04-10 23:52:52 INFO main - maxHashSlotNum=5000000
+2019-04-10 23:52:52 INFO main - maxIndexNum=20000000
+2019-04-10 23:52:52 INFO main - maxMsgsNumBatch=64
+2019-04-10 23:52:52 INFO main - messageIndexSafe=false
+2019-04-10 23:52:52 INFO main - haListenPort=10912
+2019-04-10 23:52:52 INFO main - haSendHeartbeatInterval=5000
+2019-04-10 23:52:52 INFO main - haHousekeepingInterval=20000
+2019-04-10 23:52:52 INFO main - haTransferBatchSize=32768
+2019-04-10 23:52:52 INFO main - haMasterAddress=
+2019-04-10 23:52:52 INFO main - haSlaveFallbehindMax=268435456
+2019-04-10 23:52:52 INFO main - brokerRole=ASYNC_MASTER
+2019-04-10 23:52:52 INFO main - flushDiskType=ASYNC_FLUSH
+2019-04-10 23:52:52 INFO main - syncFlushTimeout=5000
+2019-04-10 23:52:52 INFO main - messageDelayLevel=1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h
+2019-04-10 23:52:52 INFO main - flushDelayOffsetInterval=10000
+2019-04-10 23:52:52 INFO main - cleanFileForciblyEnable=true
+2019-04-10 23:52:52 INFO main - warmMapedFileEnable=false
+2019-04-10 23:52:52 INFO main - offsetCheckInSlave=false
+2019-04-10 23:52:52 INFO main - debugLockEnable=false
+2019-04-10 23:52:52 INFO main - duplicationEnable=false
+2019-04-10 23:52:52 INFO main - diskFallRecorded=true
+2019-04-10 23:52:52 INFO main - osPageCacheBusyTimeOutMills=1000
+2019-04-10 23:52:52 INFO main - defaultQueryMaxNum=32
+2019-04-10 23:52:52 INFO main - transientStorePoolEnable=false
+2019-04-10 23:52:52 INFO main - transientStorePoolSize=5
+2019-04-10 23:52:52 INFO main - fastFailIfNoBufferInStorePool=false
+2019-04-10 23:52:52 INFO main - enableDLegerCommitLog=false
+2019-04-10 23:52:52 INFO main - dLegerGroup=
+2019-04-10 23:52:52 INFO main - dLegerPeers=
+2019-04-10 23:52:52 INFO main - dLegerSelfId=
+2019-04-10 23:52:53 INFO main - Try to start service thread:AllocateMappedFileService started:false lastThread:null
+2019-04-10 23:52:53 INFO main - Set user specified name server address: 127.0.0.1:9876
+2019-04-10 23:52:53 WARN main - Load default transaction message hook service: TransactionalMessageServiceImpl
+2019-04-10 23:52:53 WARN main - Load default discard message hook service: DefaultTransactionalMessageCheckListener
+2019-04-10 23:52:53 INFO main - The broker dose not enable acl
+2019-04-10 23:52:53 INFO main - Try to start service thread:ReputMessageService started:false lastThread:null
+2019-04-10 23:52:53 INFO main - Try to start service thread:AcceptSocketService started:false lastThread:null
+2019-04-10 23:52:53 INFO main - Try to start service thread:GroupTransferService started:false lastThread:null
+2019-04-10 23:52:53 INFO main - Try to start service thread:HAClient started:false lastThread:null
+2019-04-10 23:52:53 INFO main - Try to start service thread:FlushConsumeQueueService started:false lastThread:null
+2019-04-10 23:52:53 INFO main - Try to start service thread:FlushRealTimeService started:false lastThread:null
+2019-04-10 23:52:53 INFO main - Try to start service thread:StoreStatsService started:false lastThread:null
+2019-04-10 23:52:53 INFO main - Try to start service thread:FileWatchService started:false lastThread:null
+2019-04-10 23:52:53 INFO FileWatchService - FileWatchService service started
+2019-04-10 23:52:53 INFO main - Try to start service thread:PullRequestHoldService started:false lastThread:null
+2019-04-10 23:52:53 INFO PullRequestHoldService - PullRequestHoldService service started
+2019-04-10 23:52:53 INFO main - Try to start service thread:TransactionalMessageCheckService started:false lastThread:null
+2019-04-10 23:52:54 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:52:54 INFO main - The broker[broker-a, 192.168.1.108:10911] boot success. serializeType=JSON and name server is 127.0.0.1:9876
+2019-04-10 23:53:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-10 23:53:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2019-04-10 23:53:04 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:53:34 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:53:53 INFO TransactionalMessageCheckService - create new topic TopicConfig [topicName=RMQ_SYS_TRANS_HALF_TOPIC, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2019-04-10 23:53:53 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:54:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-10 23:54:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2019-04-10 23:54:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:54:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:55:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-10 23:55:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2019-04-10 23:55:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:55:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:56:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-10 23:56:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2019-04-10 23:56:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:56:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:56:50 WARN SendMessageThread_1 - the topic TopicTest not exist, producer: /192.168.1.108:65243
+2019-04-10 23:56:50 INFO SendMessageThread_1 - Create new topic by default topic:[TBW102] config:[TopicConfig [topicName=TopicTest, readQueueNums=4, writeQueueNums=4, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]] producer:[192.168.1.108:65243]
+2019-04-10 23:56:50 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:56:51 INFO HeartbeatThread_1 - new producer connected, group: please_rename_unique_group_name channel: ClientChannelInfo [channel=[id: 0x769e1ec0, L:/192.168.1.108:10911 - R:/192.168.1.108:65244], clientId=192.168.1.108@39358, language=JAVA, version=313, lastUpdateTimestamp=1554911811521]
+2019-04-10 23:56:51 INFO HeartbeatThread_1 - new producer connected, group: CLIENT_INNER_PRODUCER channel: ClientChannelInfo [channel=[id: 0x769e1ec0, L:/192.168.1.108:10911 - R:/192.168.1.108:65244], clientId=192.168.1.108@39358, language=JAVA, version=313, lastUpdateTimestamp=1554911811521]
+2019-04-10 23:56:52 INFO ClientManageThread_5 - unregister a producer[please_rename_unique_group_name] from groupChannelTable ClientChannelInfo [channel=[id: 0x769e1ec0, L:/192.168.1.108:10911 - R:/192.168.1.108:65244], clientId=192.168.1.108@39358, language=JAVA, version=313, lastUpdateTimestamp=1554911812693]
+2019-04-10 23:56:52 INFO ClientManageThread_5 - unregister a producer group[please_rename_unique_group_name] from groupChannelTable
+2019-04-10 23:56:52 INFO ClientManageThread_6 - unregister a producer[CLIENT_INNER_PRODUCER] from groupChannelTable ClientChannelInfo [channel=[id: 0x769e1ec0, L:/192.168.1.108:10911 - R:/192.168.1.108:65244], clientId=192.168.1.108@39358, language=JAVA, version=313, lastUpdateTimestamp=1554911812695]
+2019-04-10 23:56:52 INFO ClientManageThread_6 - unregister a producer group[CLIENT_INNER_PRODUCER] from groupChannelTable
+2019-04-10 23:57:02 INFO HeartbeatThread_2 - auto create a subscription group, SubscriptionGroupConfig [groupName=please_rename_unique_group_name_4, consumeEnable=true, consumeFromMinEnable=true, consumeBroadcastEnable=true, retryQueueNums=1, retryMaxTimes=16, brokerId=0, whichBrokerWhenConsumeSlowly=1, notifyConsumerIdsChangedEnable=true]
+2019-04-10 23:57:02 INFO HeartbeatThread_2 - create new topic TopicConfig [topicName=%RETRY%please_rename_unique_group_name_4, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2019-04-10 23:57:02 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:57:02 INFO HeartbeatThread_2 - new consumer connected, group: please_rename_unique_group_name_4 CONSUME_PASSIVELY CLUSTERING channel: ClientChannelInfo [channel=[id: 0x37ee3e2a, L:/192.168.1.108:10911 - R:/192.168.1.108:65257], clientId=192.168.1.108@39371, language=JAVA, version=313, lastUpdateTimestamp=1554911822470]
+2019-04-10 23:57:02 INFO HeartbeatThread_2 - subscription changed, add new topic, group: please_rename_unique_group_name_4 SubscriptionData [classFilterMode=false, topic=TopicTest, subString=*, tagsSet=[], codeSet=[], subVersion=1554911821681, expressionType=TAG]
+2019-04-10 23:57:02 INFO HeartbeatThread_2 - subscription changed, add new topic, group: please_rename_unique_group_name_4 SubscriptionData [classFilterMode=false, topic=%RETRY%please_rename_unique_group_name_4, subString=*, tagsSet=[], codeSet=[], subVersion=1554911821701, expressionType=TAG]
+2019-04-10 23:57:02 INFO HeartbeatThread_2 - registerConsumer info changed ConsumerData [groupName=please_rename_unique_group_name_4, consumeType=CONSUME_PASSIVELY, messageModel=CLUSTERING, consumeFromWhere=CONSUME_FROM_FIRST_OFFSET, unitMode=false, subscriptionDataSet=[SubscriptionData [classFilterMode=false, topic=TopicTest, subString=*, tagsSet=[], codeSet=[], subVersion=1554911821681, expressionType=TAG], SubscriptionData [classFilterMode=false, topic=%RETRY%please_rename_unique_group_name_4, subString=*, tagsSet=[], codeSet=[], subVersion=1554911821701, expressionType=TAG]]] 192.168.1.108:65257
+2019-04-10 23:57:02 INFO HeartbeatThread_2 - new producer connected, group: CLIENT_INNER_PRODUCER channel: ClientChannelInfo [channel=[id: 0x37ee3e2a, L:/192.168.1.108:10911 - R:/192.168.1.108:65257], clientId=192.168.1.108@39371, language=JAVA, version=313, lastUpdateTimestamp=1554911822483]
+2019-04-10 23:57:02 INFO HeartbeatThread_3 - subscription changed, group: please_rename_unique_group_name_4 OLD: SubscriptionData [classFilterMode=false, topic=TopicTest, subString=*, tagsSet=[], codeSet=[], subVersion=1554911821681, expressionType=TAG] NEW: SubscriptionData [classFilterMode=false, topic=TopicTest, subString=*, tagsSet=[], codeSet=[], subVersion=1554911822529, expressionType=TAG]
+2019-04-10 23:57:02 INFO HeartbeatThread_4 - subscription changed, group: please_rename_unique_group_name_4 OLD: SubscriptionData [classFilterMode=false, topic=%RETRY%please_rename_unique_group_name_4, subString=*, tagsSet=[], codeSet=[], subVersion=1554911821701, expressionType=TAG] NEW: SubscriptionData [classFilterMode=false, topic=%RETRY%please_rename_unique_group_name_4, subString=*, tagsSet=[], codeSet=[], subVersion=1554911822535, expressionType=TAG]
+2019-04-10 23:57:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-10 23:57:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 179890 bytes
+2019-04-10 23:57:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:57:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:57:59 INFO HeartbeatThread_7 - new producer connected, group: please_rename_unique_group_name channel: ClientChannelInfo [channel=[id: 0xb3849f54, L:/192.168.1.108:10911 - R:/192.168.1.108:65301], clientId=192.168.1.108@39404, language=JAVA, version=313, lastUpdateTimestamp=1554911879977]
+2019-04-10 23:57:59 INFO HeartbeatThread_7 - new producer connected, group: CLIENT_INNER_PRODUCER channel: ClientChannelInfo [channel=[id: 0xb3849f54, L:/192.168.1.108:10911 - R:/192.168.1.108:65301], clientId=192.168.1.108@39404, language=JAVA, version=313, lastUpdateTimestamp=1554911879977]
+2019-04-10 23:58:01 INFO ClientManageThread_8 - unregister a producer[please_rename_unique_group_name] from groupChannelTable ClientChannelInfo [channel=[id: 0xb3849f54, L:/192.168.1.108:10911 - R:/192.168.1.108:65301], clientId=192.168.1.108@39404, language=JAVA, version=313, lastUpdateTimestamp=1554911881266]
+2019-04-10 23:58:01 INFO ClientManageThread_8 - unregister a producer group[please_rename_unique_group_name] from groupChannelTable
+2019-04-10 23:58:01 INFO ClientManageThread_9 - unregister a producer[CLIENT_INNER_PRODUCER] from groupChannelTable ClientChannelInfo [channel=[id: 0xb3849f54, L:/192.168.1.108:10911 - R:/192.168.1.108:65301], clientId=192.168.1.108@39404, language=JAVA, version=313, lastUpdateTimestamp=1554911881268]
+2019-04-10 23:58:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-10 23:58:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-10 23:58:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:58:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:59:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-10 23:59:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-10 23:59:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-10 23:59:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:00:00 INFO BrokerControllerScheduledThread1 - yesterday put message total: 2000
+2019-04-11 00:00:00 INFO BrokerControllerScheduledThread1 - yesterday get message total: 2000
+2019-04-11 00:00:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:00:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:00:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:00:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:01:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:01:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:01:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:01:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:02:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:02:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:02:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:02:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:03:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:03:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:03:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:03:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:04:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:04:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:04:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:04:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:05:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:05:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:05:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:05:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:06:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:06:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:06:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:06:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:07:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:07:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:07:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:07:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:08:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:08:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:08:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:08:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:09:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:09:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:09:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:09:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:10:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:10:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:10:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:10:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:11:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:11:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:11:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:11:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:12:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:12:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:12:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:12:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:13:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:13:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:13:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:13:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:14:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:14:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:14:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:14:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:15:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:15:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:15:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:15:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:16:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:16:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:16:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:16:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:17:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:17:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:17:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:17:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:18:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:18:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:18:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:18:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:19:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:19:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:19:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:19:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:20:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:20:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:20:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:20:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:21:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:21:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:21:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:21:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:22:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:22:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:22:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:22:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:23:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:23:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:23:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:23:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:24:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:24:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:24:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:24:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:25:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:25:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:25:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:25:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:26:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:26:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:26:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:26:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:27:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:27:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:27:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:27:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:28:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:28:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:28:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:28:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:29:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:29:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:29:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:29:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:30:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:30:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:30:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:30:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:31:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:31:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:31:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:31:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:32:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:32:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:32:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:32:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:33:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:33:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:33:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:33:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:34:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:34:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:34:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:34:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:35:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:35:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:35:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:35:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:36:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:36:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:36:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:36:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:37:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:37:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:37:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:37:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:38:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:38:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:38:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:38:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:39:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:39:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:39:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:39:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:40:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:40:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:40:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:40:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:41:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:41:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:41:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:41:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:42:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:42:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:42:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:42:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:43:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:43:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:43:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:43:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:44:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:44:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:44:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:44:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:45:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:45:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:45:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:45:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:46:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:46:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:46:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:46:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:47:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:47:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:47:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:47:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:48:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:48:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:48:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:48:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:49:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:49:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:49:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:49:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:50:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:50:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:50:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:50:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:51:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:51:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:51:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:51:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:52:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:52:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:52:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:52:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:53:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:53:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:53:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:53:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:54:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:54:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:54:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:54:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:55:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:55:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:55:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:55:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:56:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:56:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:56:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:56:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:57:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:57:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:57:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:57:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:58:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:58:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:58:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:58:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:59:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 00:59:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 00:59:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 00:59:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:00:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 01:00:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 01:00:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:00:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:01:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 01:01:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 01:01:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:01:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:02:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 01:02:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 01:02:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:02:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:03:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 01:03:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 01:03:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:03:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:04:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 01:04:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 01:04:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:04:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:05:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 01:05:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 01:05:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:05:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:06:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 01:06:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 01:06:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:06:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:07:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 01:07:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 01:07:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:07:34 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:08:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 01:08:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 01:08:04 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:08:34 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:09:03 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 01:09:03 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 01:09:04 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 01:09:06 INFO ShutdownHook - Shutdown hook was invoked, 1
+2019-04-11 01:09:06 INFO ShutdownHook - Try to shutdown service thread:PullRequestHoldService started:true lastThread:Thread[PullRequestHoldService,5,main]
+2019-04-11 01:09:06 INFO ShutdownHook - shutdown thread PullRequestHoldService interrupt false
+2019-04-11 01:09:06 INFO PullRequestHoldService - PullRequestHoldService service end
+2019-04-11 01:09:06 INFO ShutdownHook - join thread PullRequestHoldService eclipse time(ms) 0 90000
+2019-04-11 01:09:06 INFO NettyEventExecutor - NETTY EVENT: remove channel[ClientChannelInfo [channel=[id: 0x37ee3e2a, L:/192.168.1.108:10911 ! R:/192.168.1.108:65257], clientId=192.168.1.108@39371, language=JAVA, version=313, lastUpdateTimestamp=1554916143082]][192.168.1.108:65257] from ProducerManager groupChannelTable, producer group: CLIENT_INNER_PRODUCER
+2019-04-11 01:09:06 WARN NettyEventExecutor - NETTY EVENT: remove not active channel[ClientChannelInfo [channel=[id: 0x37ee3e2a, L:/192.168.1.108:10911 ! R:/192.168.1.108:65257], clientId=192.168.1.108@39371, language=JAVA, version=313, lastUpdateTimestamp=1554916143082]] from ConsumerGroupInfo groupChannelTable, consumer group: please_rename_unique_group_name_4
+2019-04-11 01:09:06 INFO NettyEventExecutor - unregister consumer ok, no any connection, and remove consumer group, please_rename_unique_group_name_4
+2019-04-11 01:09:06 INFO ShutdownHook - Try to shutdown service thread:FileWatchService started:true lastThread:Thread[FileWatchService,5,main]
+2019-04-11 01:09:06 INFO ShutdownHook - shutdown thread FileWatchService interrupt false
+2019-04-11 01:09:06 INFO FileWatchService - FileWatchService service end
+2019-04-11 01:09:06 INFO ShutdownHook - join thread FileWatchService eclipse time(ms) 1 90000
+2019-04-11 01:09:07 INFO ShutdownHook - Try to shutdown service thread:HAClient started:true lastThread:Thread[HAClient,5,main]
+2019-04-11 01:09:07 INFO ShutdownHook - shutdown thread HAClient interrupt false
+2019-04-11 01:09:07 INFO ShutdownHook - join thread HAClient eclipse time(ms) 0 90000
+2019-04-11 01:09:07 INFO ShutdownHook - Try to shutdown service thread:AcceptSocketService started:true lastThread:Thread[AcceptSocketService,5,main]
+2019-04-11 01:09:07 INFO ShutdownHook - shutdown thread AcceptSocketService interrupt true
+2019-04-11 01:09:07 INFO ShutdownHook - join thread AcceptSocketService eclipse time(ms) 1 90000
+2019-04-11 01:09:07 INFO ShutdownHook - Try to shutdown service thread:GroupTransferService started:true lastThread:Thread[GroupTransferService,5,main]
+2019-04-11 01:09:07 INFO ShutdownHook - shutdown thread GroupTransferService interrupt false
+2019-04-11 01:09:07 INFO ShutdownHook - join thread GroupTransferService eclipse time(ms) 0 90000
+2019-04-11 01:09:07 INFO ShutdownHook - Try to shutdown service thread:StoreStatsService started:true lastThread:Thread[StoreStatsService,5,main]
+2019-04-11 01:09:07 INFO ShutdownHook - shutdown thread StoreStatsService interrupt false
+2019-04-11 01:09:07 INFO ShutdownHook - join thread StoreStatsService eclipse time(ms) 1 90000
+2019-04-11 01:09:07 INFO ShutdownHook - Try to shutdown service thread:FlushRealTimeService started:true lastThread:Thread[FlushRealTimeService,5,main]
+2019-04-11 01:09:07 INFO ShutdownHook - shutdown thread FlushRealTimeService interrupt false
+2019-04-11 01:09:07 INFO ShutdownHook - join thread FlushRealTimeService eclipse time(ms) 0 300000
+2019-04-11 01:09:07 INFO ShutdownHook - Try to shutdown service thread:ReputMessageService started:true lastThread:Thread[ReputMessageService,5,main]
+2019-04-11 01:09:07 INFO ShutdownHook - shutdown thread ReputMessageService interrupt false
+2019-04-11 01:09:07 INFO ShutdownHook - join thread ReputMessageService eclipse time(ms) 0 90000
+2019-04-11 01:09:07 INFO ShutdownHook - Try to shutdown service thread:FlushConsumeQueueService started:true lastThread:Thread[FlushConsumeQueueService,5,main]
+2019-04-11 01:09:07 INFO ShutdownHook - shutdown thread FlushConsumeQueueService interrupt false
+2019-04-11 01:09:07 INFO ShutdownHook - join thread FlushConsumeQueueService eclipse time(ms) 0 60000
+2019-04-11 01:09:07 INFO ShutdownHook - Try to shutdown service thread:AllocateMappedFileService started:true lastThread:Thread[AllocateMappedFileService,5,main]
+2019-04-11 01:09:07 INFO ShutdownHook - shutdown thread AllocateMappedFileService interrupt true
+2019-04-11 01:09:07 INFO ShutdownHook - join thread AllocateMappedFileService eclipse time(ms) 1 90000
+2019-04-11 01:09:07 WARN ShutdownHook - unregisterBroker Exception, 127.0.0.1:9876
+org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to <127.0.0.1:9876> failed
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient.invokeSync(NettyRemotingClient.java:392) ~[classes/:na]
+	at org.apache.rocketmq.broker.out.BrokerOuterAPI.unregisterBroker(BrokerOuterAPI.java:248) ~[classes/:na]
+	at org.apache.rocketmq.broker.out.BrokerOuterAPI.unregisterBrokerAll(BrokerOuterAPI.java:225) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.unregisterBrokerAll(BrokerController.java:811) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.shutdown(BrokerController.java:754) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup$1.run(BrokerStartup.java:235) [classes/:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+2019-04-11 01:09:07 INFO ShutdownHook - Try to shutdown service thread:FileWatchService started:false lastThread:Thread[FileWatchService,5,]
+2019-04-11 01:09:07 INFO ShutdownHook - Try to shutdown service thread:TransactionalMessageCheckService started:true lastThread:Thread[TransactionalMessageCheckService,5,main]
+2019-04-11 01:09:07 INFO ShutdownHook - shutdown thread TransactionalMessageCheckService interrupt false
+2019-04-11 01:09:07 INFO ShutdownHook - join thread TransactionalMessageCheckService eclipse time(ms) 1 90000
+2019-04-11 01:09:07 INFO ShutdownHook - Shutdown hook over, consuming total time(ms): 1052
+2019-04-11 22:19:25 INFO main - rocketmqHome=/Users/liwenguang/SourceCode/Github/awesome-rocketmq
+2019-04-11 22:19:25 INFO main - namesrvAddr=127.0.0.1:9876
+2019-04-11 22:19:25 INFO main - brokerIP1=172.20.10.2
+2019-04-11 22:19:25 INFO main - brokerIP2=172.20.10.2
+2019-04-11 22:19:25 INFO main - brokerName=broker-a
+2019-04-11 22:19:25 INFO main - brokerClusterName=DefaultCluster
+2019-04-11 22:19:25 INFO main - brokerId=0
+2019-04-11 22:19:25 INFO main - brokerPermission=6
+2019-04-11 22:19:25 INFO main - defaultTopicQueueNums=8
+2019-04-11 22:19:25 INFO main - autoCreateTopicEnable=true
+2019-04-11 22:19:25 INFO main - clusterTopicEnable=true
+2019-04-11 22:19:25 INFO main - brokerTopicEnable=true
+2019-04-11 22:19:25 INFO main - autoCreateSubscriptionGroup=true
+2019-04-11 22:19:25 INFO main - messageStorePlugIn=
+2019-04-11 22:19:25 INFO main - msgTraceTopicName=RMQ_SYS_TRACE_TOPIC
+2019-04-11 22:19:25 INFO main - traceTopicEnable=false
+2019-04-11 22:19:25 INFO main - sendMessageThreadPoolNums=1
+2019-04-11 22:19:25 INFO main - pullMessageThreadPoolNums=32
+2019-04-11 22:19:25 INFO main - queryMessageThreadPoolNums=16
+2019-04-11 22:19:25 INFO main - adminBrokerThreadPoolNums=16
+2019-04-11 22:19:25 INFO main - clientManageThreadPoolNums=32
+2019-04-11 22:19:25 INFO main - consumerManageThreadPoolNums=32
+2019-04-11 22:19:25 INFO main - heartbeatThreadPoolNums=8
+2019-04-11 22:19:25 INFO main - endTransactionThreadPoolNums=24
+2019-04-11 22:19:25 INFO main - flushConsumerOffsetInterval=5000
+2019-04-11 22:19:25 INFO main - flushConsumerOffsetHistoryInterval=60000
+2019-04-11 22:19:25 INFO main - rejectTransactionMessage=false
+2019-04-11 22:19:25 INFO main - fetchNamesrvAddrByAddressServer=false
+2019-04-11 22:19:25 INFO main - sendThreadPoolQueueCapacity=10000
+2019-04-11 22:19:25 INFO main - pullThreadPoolQueueCapacity=100000
+2019-04-11 22:19:25 INFO main - queryThreadPoolQueueCapacity=20000
+2019-04-11 22:19:25 INFO main - clientManagerThreadPoolQueueCapacity=1000000
+2019-04-11 22:19:25 INFO main - consumerManagerThreadPoolQueueCapacity=1000000
+2019-04-11 22:19:25 INFO main - heartbeatThreadPoolQueueCapacity=50000
+2019-04-11 22:19:25 INFO main - endTransactionPoolQueueCapacity=100000
+2019-04-11 22:19:25 INFO main - filterServerNums=0
+2019-04-11 22:19:25 INFO main - longPollingEnable=true
+2019-04-11 22:19:25 INFO main - shortPollingTimeMills=1000
+2019-04-11 22:19:25 INFO main - notifyConsumerIdsChangedEnable=true
+2019-04-11 22:19:25 INFO main - highSpeedMode=false
+2019-04-11 22:19:25 INFO main - commercialEnable=true
+2019-04-11 22:19:25 INFO main - commercialTimerCount=1
+2019-04-11 22:19:25 INFO main - commercialTransCount=1
+2019-04-11 22:19:25 INFO main - commercialBigCount=1
+2019-04-11 22:19:25 INFO main - commercialBaseCount=1
+2019-04-11 22:19:25 INFO main - transferMsgByHeap=true
+2019-04-11 22:19:25 INFO main - maxDelayTime=40
+2019-04-11 22:19:25 INFO main - regionId=DefaultRegion
+2019-04-11 22:19:25 INFO main - registerBrokerTimeoutMills=6000
+2019-04-11 22:19:25 INFO main - slaveReadEnable=false
+2019-04-11 22:19:25 INFO main - disableConsumeIfConsumerReadSlowly=false
+2019-04-11 22:19:25 INFO main - consumerFallbehindThreshold=17179869184
+2019-04-11 22:19:25 INFO main - brokerFastFailureEnable=true
+2019-04-11 22:19:25 INFO main - waitTimeMillsInSendQueue=200
+2019-04-11 22:19:25 INFO main - waitTimeMillsInPullQueue=5000
+2019-04-11 22:19:25 INFO main - waitTimeMillsInHeartbeatQueue=31000
+2019-04-11 22:19:25 INFO main - waitTimeMillsInTransactionQueue=3000
+2019-04-11 22:19:25 INFO main - startAcceptSendRequestTimeStamp=0
+2019-04-11 22:19:25 INFO main - traceOn=true
+2019-04-11 22:19:25 INFO main - enableCalcFilterBitMap=false
+2019-04-11 22:19:25 INFO main - expectConsumerNumUseFilter=32
+2019-04-11 22:19:25 INFO main - maxErrorRateOfBloomFilter=20
+2019-04-11 22:19:25 INFO main - filterDataCleanTimeSpan=86400000
+2019-04-11 22:19:25 INFO main - filterSupportRetry=false
+2019-04-11 22:19:25 INFO main - enablePropertyFilter=false
+2019-04-11 22:19:25 INFO main - compressedRegister=false
+2019-04-11 22:19:25 INFO main - forceRegister=true
+2019-04-11 22:19:25 INFO main - registerNameServerPeriod=30000
+2019-04-11 22:19:25 INFO main - transactionTimeOut=6000
+2019-04-11 22:19:25 INFO main - transactionCheckMax=15
+2019-04-11 22:19:25 INFO main - transactionCheckInterval=60000
+2019-04-11 22:19:25 INFO main - aclEnable=false
+2019-04-11 22:19:25 INFO main - listenPort=10911
+2019-04-11 22:19:25 INFO main - serverWorkerThreads=8
+2019-04-11 22:19:25 INFO main - serverCallbackExecutorThreads=0
+2019-04-11 22:19:25 INFO main - serverSelectorThreads=3
+2019-04-11 22:19:25 INFO main - serverOnewaySemaphoreValue=256
+2019-04-11 22:19:25 INFO main - serverAsyncSemaphoreValue=64
+2019-04-11 22:19:25 INFO main - serverChannelMaxIdleTimeSeconds=120
+2019-04-11 22:19:25 INFO main - serverSocketSndBufSize=131072
+2019-04-11 22:19:25 INFO main - serverSocketRcvBufSize=131072
+2019-04-11 22:19:25 INFO main - serverPooledByteBufAllocatorEnable=true
+2019-04-11 22:19:25 INFO main - useEpollNativeSelector=false
+2019-04-11 22:19:25 INFO main - clientWorkerThreads=4
+2019-04-11 22:19:25 INFO main - clientCallbackExecutorThreads=8
+2019-04-11 22:19:25 INFO main - clientOnewaySemaphoreValue=65535
+2019-04-11 22:19:25 INFO main - clientAsyncSemaphoreValue=65535
+2019-04-11 22:19:25 INFO main - connectTimeoutMillis=3000
+2019-04-11 22:19:25 INFO main - channelNotActiveInterval=60000
+2019-04-11 22:19:25 INFO main - clientChannelMaxIdleTimeSeconds=120
+2019-04-11 22:19:25 INFO main - clientSocketSndBufSize=131072
+2019-04-11 22:19:25 INFO main - clientSocketRcvBufSize=131072
+2019-04-11 22:19:25 INFO main - clientPooledByteBufAllocatorEnable=false
+2019-04-11 22:19:25 INFO main - clientCloseSocketIfTimeout=false
+2019-04-11 22:19:25 INFO main - useTLS=false
+2019-04-11 22:19:25 INFO main - storePathRootDir=/Users/liwenguang/SourceCode/Github/awesome-rocketmq/store
+2019-04-11 22:19:25 INFO main - storePathCommitLog=/Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/commitlog
+2019-04-11 22:19:25 INFO main - mapedFileSizeCommitLog=1073741824
+2019-04-11 22:19:25 INFO main - mapedFileSizeConsumeQueue=6000000
+2019-04-11 22:19:25 INFO main - enableConsumeQueueExt=false
+2019-04-11 22:19:25 INFO main - mappedFileSizeConsumeQueueExt=50331648
+2019-04-11 22:19:25 INFO main - bitMapLengthConsumeQueueExt=64
+2019-04-11 22:19:25 INFO main - flushIntervalCommitLog=500
+2019-04-11 22:19:25 INFO main - commitIntervalCommitLog=200
+2019-04-11 22:19:25 INFO main - useReentrantLockWhenPutMessage=false
+2019-04-11 22:19:25 INFO main - flushCommitLogTimed=false
+2019-04-11 22:19:25 INFO main - flushIntervalConsumeQueue=1000
+2019-04-11 22:19:25 INFO main - cleanResourceInterval=10000
+2019-04-11 22:19:25 INFO main - deleteCommitLogFilesInterval=100
+2019-04-11 22:19:25 INFO main - deleteConsumeQueueFilesInterval=100
+2019-04-11 22:19:25 INFO main - destroyMapedFileIntervalForcibly=120000
+2019-04-11 22:19:25 INFO main - redeleteHangedFileInterval=120000
+2019-04-11 22:19:25 INFO main - deleteWhen=04
+2019-04-11 22:19:25 INFO main - diskMaxUsedSpaceRatio=75
+2019-04-11 22:19:25 INFO main - fileReservedTime=48
+2019-04-11 22:19:25 INFO main - putMsgIndexHightWater=600000
+2019-04-11 22:19:25 INFO main - maxMessageSize=4194304
+2019-04-11 22:19:25 INFO main - checkCRCOnRecover=true
+2019-04-11 22:19:25 INFO main - flushCommitLogLeastPages=4
+2019-04-11 22:19:25 INFO main - commitCommitLogLeastPages=4
+2019-04-11 22:19:25 INFO main - flushLeastPagesWhenWarmMapedFile=4096
+2019-04-11 22:19:25 INFO main - flushConsumeQueueLeastPages=2
+2019-04-11 22:19:25 INFO main - flushCommitLogThoroughInterval=10000
+2019-04-11 22:19:25 INFO main - commitCommitLogThoroughInterval=200
+2019-04-11 22:19:25 INFO main - flushConsumeQueueThoroughInterval=60000
+2019-04-11 22:19:25 INFO main - maxTransferBytesOnMessageInMemory=262144
+2019-04-11 22:19:25 INFO main - maxTransferCountOnMessageInMemory=32
+2019-04-11 22:19:25 INFO main - maxTransferBytesOnMessageInDisk=65536
+2019-04-11 22:19:25 INFO main - maxTransferCountOnMessageInDisk=8
+2019-04-11 22:19:25 INFO main - accessMessageInMemoryMaxRatio=40
+2019-04-11 22:19:25 INFO main - messageIndexEnable=true
+2019-04-11 22:19:25 INFO main - maxHashSlotNum=5000000
+2019-04-11 22:19:25 INFO main - maxIndexNum=20000000
+2019-04-11 22:19:25 INFO main - maxMsgsNumBatch=64
+2019-04-11 22:19:25 INFO main - messageIndexSafe=false
+2019-04-11 22:19:25 INFO main - haListenPort=10912
+2019-04-11 22:19:25 INFO main - haSendHeartbeatInterval=5000
+2019-04-11 22:19:25 INFO main - haHousekeepingInterval=20000
+2019-04-11 22:19:25 INFO main - haTransferBatchSize=32768
+2019-04-11 22:19:25 INFO main - haMasterAddress=
+2019-04-11 22:19:25 INFO main - haSlaveFallbehindMax=268435456
+2019-04-11 22:19:25 INFO main - brokerRole=ASYNC_MASTER
+2019-04-11 22:19:25 INFO main - flushDiskType=ASYNC_FLUSH
+2019-04-11 22:19:25 INFO main - syncFlushTimeout=5000
+2019-04-11 22:19:25 INFO main - messageDelayLevel=1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h
+2019-04-11 22:19:25 INFO main - flushDelayOffsetInterval=10000
+2019-04-11 22:19:25 INFO main - cleanFileForciblyEnable=true
+2019-04-11 22:19:25 INFO main - warmMapedFileEnable=false
+2019-04-11 22:19:25 INFO main - offsetCheckInSlave=false
+2019-04-11 22:19:25 INFO main - debugLockEnable=false
+2019-04-11 22:19:25 INFO main - duplicationEnable=false
+2019-04-11 22:19:25 INFO main - diskFallRecorded=true
+2019-04-11 22:19:25 INFO main - osPageCacheBusyTimeOutMills=1000
+2019-04-11 22:19:25 INFO main - defaultQueryMaxNum=32
+2019-04-11 22:19:25 INFO main - transientStorePoolEnable=false
+2019-04-11 22:19:25 INFO main - transientStorePoolSize=5
+2019-04-11 22:19:25 INFO main - fastFailIfNoBufferInStorePool=false
+2019-04-11 22:19:25 INFO main - enableDLegerCommitLog=false
+2019-04-11 22:19:25 INFO main - dLegerGroup=
+2019-04-11 22:19:25 INFO main - dLegerPeers=
+2019-04-11 22:19:25 INFO main - dLegerSelfId=
+2019-04-11 22:19:26 INFO main - load exist local topic, TopicConfig [topicName=RMQ_SYS_TRANS_HALF_TOPIC, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2019-04-11 22:19:26 INFO main - load exist local topic, TopicConfig [topicName=%RETRY%please_rename_unique_group_name_4, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2019-04-11 22:19:26 INFO main - load exist local topic, TopicConfig [topicName=BenchmarkTest, readQueueNums=1024, writeQueueNums=1024, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2019-04-11 22:19:26 INFO main - load exist local topic, TopicConfig [topicName=OFFSET_MOVED_EVENT, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2019-04-11 22:19:26 INFO main - load exist local topic, TopicConfig [topicName=TopicTest, readQueueNums=4, writeQueueNums=4, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2019-04-11 22:19:26 INFO main - load exist local topic, TopicConfig [topicName=broker-a, readQueueNums=1, writeQueueNums=1, perm=RWX, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2019-04-11 22:19:26 INFO main - load exist local topic, TopicConfig [topicName=TBW102, readQueueNums=8, writeQueueNums=8, perm=RWX, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2019-04-11 22:19:26 INFO main - load exist local topic, TopicConfig [topicName=SELF_TEST_TOPIC, readQueueNums=1, writeQueueNums=1, perm=RW-, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2019-04-11 22:19:26 INFO main - load exist local topic, TopicConfig [topicName=DefaultCluster, readQueueNums=16, writeQueueNums=16, perm=RWX, topicFilterType=SINGLE_TAG, topicSysFlag=0, order=false]
+2019-04-11 22:19:26 INFO main - load /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/config/topics.json OK
+2019-04-11 22:19:26 INFO main - load /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/config/consumerOffset.json OK
+2019-04-11 22:19:26 INFO main - load exist subscription group, SubscriptionGroupConfig [groupName=SELF_TEST_C_GROUP, consumeEnable=true, consumeFromMinEnable=true, consumeBroadcastEnable=true, retryQueueNums=1, retryMaxTimes=16, brokerId=0, whichBrokerWhenConsumeSlowly=1, notifyConsumerIdsChangedEnable=true]
+2019-04-11 22:19:26 INFO main - load exist subscription group, SubscriptionGroupConfig [groupName=please_rename_unique_group_name_4, consumeEnable=true, consumeFromMinEnable=true, consumeBroadcastEnable=true, retryQueueNums=1, retryMaxTimes=16, brokerId=0, whichBrokerWhenConsumeSlowly=1, notifyConsumerIdsChangedEnable=true]
+2019-04-11 22:19:26 INFO main - load exist subscription group, SubscriptionGroupConfig [groupName=CID_ONSAPI_OWNER, consumeEnable=true, consumeFromMinEnable=true, consumeBroadcastEnable=true, retryQueueNums=1, retryMaxTimes=16, brokerId=0, whichBrokerWhenConsumeSlowly=1, notifyConsumerIdsChangedEnable=true]
+2019-04-11 22:19:26 INFO main - load exist subscription group, SubscriptionGroupConfig [groupName=CID_ONSAPI_PERMISSION, consumeEnable=true, consumeFromMinEnable=true, consumeBroadcastEnable=true, retryQueueNums=1, retryMaxTimes=16, brokerId=0, whichBrokerWhenConsumeSlowly=1, notifyConsumerIdsChangedEnable=true]
+2019-04-11 22:19:26 INFO main - load exist subscription group, SubscriptionGroupConfig [groupName=TOOLS_CONSUMER, consumeEnable=true, consumeFromMinEnable=true, consumeBroadcastEnable=true, retryQueueNums=1, retryMaxTimes=16, brokerId=0, whichBrokerWhenConsumeSlowly=1, notifyConsumerIdsChangedEnable=true]
+2019-04-11 22:19:26 INFO main - load exist subscription group, SubscriptionGroupConfig [groupName=CID_ONS-HTTP-PROXY, consumeEnable=true, consumeFromMinEnable=true, consumeBroadcastEnable=true, retryQueueNums=1, retryMaxTimes=16, brokerId=0, whichBrokerWhenConsumeSlowly=1, notifyConsumerIdsChangedEnable=true]
+2019-04-11 22:19:26 INFO main - load exist subscription group, SubscriptionGroupConfig [groupName=FILTERSRV_CONSUMER, consumeEnable=true, consumeFromMinEnable=true, consumeBroadcastEnable=true, retryQueueNums=1, retryMaxTimes=16, brokerId=0, whichBrokerWhenConsumeSlowly=1, notifyConsumerIdsChangedEnable=true]
+2019-04-11 22:19:26 INFO main - load exist subscription group, SubscriptionGroupConfig [groupName=CID_ONSAPI_PULL, consumeEnable=true, consumeFromMinEnable=true, consumeBroadcastEnable=true, retryQueueNums=1, retryMaxTimes=16, brokerId=0, whichBrokerWhenConsumeSlowly=1, notifyConsumerIdsChangedEnable=true]
+2019-04-11 22:19:26 INFO main - load /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/config/subscriptionGroup.json OK
+2019-04-11 22:19:26 INFO main - load /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/config/consumerFilter.json OK
+2019-04-11 22:19:26 INFO main - Try to start service thread:AllocateMappedFileService started:false lastThread:null
+2019-04-11 22:19:26 INFO main - load /Users/liwenguang/SourceCode/Github/awesome-rocketmq/store/config/delayOffset.json OK
+2019-04-11 22:19:27 INFO main - Set user specified name server address: 127.0.0.1:9876
+2019-04-11 22:19:27 WARN main - Load default transaction message hook service: TransactionalMessageServiceImpl
+2019-04-11 22:19:27 WARN main - Load default discard message hook service: DefaultTransactionalMessageCheckListener
+2019-04-11 22:19:27 INFO main - The broker dose not enable acl
+2019-04-11 22:19:27 INFO main - Try to start service thread:ReputMessageService started:false lastThread:null
+2019-04-11 22:19:27 INFO main - Try to start service thread:AcceptSocketService started:false lastThread:null
+2019-04-11 22:19:27 INFO main - Try to start service thread:GroupTransferService started:false lastThread:null
+2019-04-11 22:19:27 INFO main - Try to start service thread:HAClient started:false lastThread:null
+2019-04-11 22:19:27 INFO main - Try to start service thread:FlushConsumeQueueService started:false lastThread:null
+2019-04-11 22:19:27 INFO main - Try to start service thread:FlushRealTimeService started:false lastThread:null
+2019-04-11 22:19:27 INFO main - Try to start service thread:StoreStatsService started:false lastThread:null
+2019-04-11 22:19:27 INFO main - Try to start service thread:FileWatchService started:false lastThread:null
+2019-04-11 22:19:27 INFO FileWatchService - FileWatchService service started
+2019-04-11 22:19:27 INFO main - Try to start service thread:PullRequestHoldService started:false lastThread:null
+2019-04-11 22:19:27 INFO PullRequestHoldService - PullRequestHoldService service started
+2019-04-11 22:19:27 INFO main - Try to start service thread:TransactionalMessageCheckService started:false lastThread:null
+2019-04-11 22:19:27 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:19:27 INFO main - The broker[broker-a, 172.20.10.2:10911] boot success. serializeType=JSON and name server is 127.0.0.1:9876
+2019-04-11 22:19:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:19:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 22:19:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:20:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:20:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:20:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 22:20:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:21:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:21:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:21:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 22:21:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:22:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:22:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:22:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 22:22:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:23:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:23:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:23:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 22:23:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:24:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:24:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:24:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 22:24:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:25:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:25:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:25:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 22:25:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:26:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:26:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:26:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 359780 bytes
+2019-04-11 22:26:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:26:54 INFO HeartbeatThread_1 - new producer connected, group: CLIENT_INNER_PRODUCER channel: ClientChannelInfo [channel=[id: 0xb39d1fb0, L:/172.20.10.2:10911 - R:/172.20.10.2:53154], clientId=172.20.10.2@60687, language=JAVA, version=313, lastUpdateTimestamp=1554992814790]
+2019-04-11 22:26:54 INFO HeartbeatThread_1 - new producer connected, group: please_rename_unique_group_name channel: ClientChannelInfo [channel=[id: 0xb39d1fb0, L:/172.20.10.2:10911 - R:/172.20.10.2:53154], clientId=172.20.10.2@60687, language=JAVA, version=313, lastUpdateTimestamp=1554992814790]
+2019-04-11 22:26:56 INFO ClientManageThread_9 - unregister a producer[please_rename_unique_group_name] from groupChannelTable ClientChannelInfo [channel=[id: 0xb39d1fb0, L:/172.20.10.2:10911 - R:/172.20.10.2:53154], clientId=172.20.10.2@60687, language=JAVA, version=313, lastUpdateTimestamp=1554992816354]
+2019-04-11 22:26:56 INFO ClientManageThread_9 - unregister a producer group[please_rename_unique_group_name] from groupChannelTable
+2019-04-11 22:26:56 INFO ClientManageThread_10 - unregister a producer[CLIENT_INNER_PRODUCER] from groupChannelTable ClientChannelInfo [channel=[id: 0xb39d1fb0, L:/172.20.10.2:10911 - R:/172.20.10.2:53154], clientId=172.20.10.2@60687, language=JAVA, version=313, lastUpdateTimestamp=1554992816356]
+2019-04-11 22:26:56 INFO ClientManageThread_10 - unregister a producer group[CLIENT_INNER_PRODUCER] from groupChannelTable
+2019-04-11 22:27:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:27:11 INFO HeartbeatThread_2 - new producer connected, group: CLIENT_INNER_PRODUCER channel: ClientChannelInfo [channel=[id: 0xf9384e9c, L:/172.20.10.2:10911 - R:/172.20.10.2:53941], clientId=172.20.10.2@60924, language=JAVA, version=313, lastUpdateTimestamp=1554992831625]
+2019-04-11 22:27:11 INFO HeartbeatThread_2 - new producer connected, group: please_rename_unique_group_name channel: ClientChannelInfo [channel=[id: 0xf9384e9c, L:/172.20.10.2:10911 - R:/172.20.10.2:53941], clientId=172.20.10.2@60924, language=JAVA, version=313, lastUpdateTimestamp=1554992831625]
+2019-04-11 22:27:12 INFO ClientManageThread_11 - unregister a producer[please_rename_unique_group_name] from groupChannelTable ClientChannelInfo [channel=[id: 0xf9384e9c, L:/172.20.10.2:10911 - R:/172.20.10.2:53941], clientId=172.20.10.2@60924, language=JAVA, version=313, lastUpdateTimestamp=1554992832772]
+2019-04-11 22:27:12 INFO ClientManageThread_11 - unregister a producer group[please_rename_unique_group_name] from groupChannelTable
+2019-04-11 22:27:12 INFO ClientManageThread_12 - unregister a producer[CLIENT_INNER_PRODUCER] from groupChannelTable ClientChannelInfo [channel=[id: 0xf9384e9c, L:/172.20.10.2:10911 - R:/172.20.10.2:53941], clientId=172.20.10.2@60924, language=JAVA, version=313, lastUpdateTimestamp=1554992832774]
+2019-04-11 22:27:12 INFO ClientManageThread_12 - unregister a producer group[CLIENT_INNER_PRODUCER] from groupChannelTable
+2019-04-11 22:27:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:27:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:27:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:28:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:28:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:28:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:28:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:29:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:29:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:29:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:29:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:30:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:30:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:30:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:30:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:31:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:31:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:31:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:31:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:32:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:32:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:32:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:32:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:33:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:33:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:33:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:33:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:34:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:34:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:34:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:34:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:35:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:35:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:35:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:35:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:36:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:36:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:36:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:36:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:37:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:37:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:37:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:37:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:38:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:38:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:38:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:38:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:39:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:39:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:39:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:39:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:40:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:40:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:40:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:40:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:41:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:41:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:41:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:41:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:42:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:42:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:42:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:42:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:43:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:43:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:43:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:43:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:44:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:44:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:44:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:44:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:45:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:45:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:45:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:45:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:46:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:46:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:46:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:46:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:47:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:47:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:47:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:47:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:48:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:48:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:48:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:48:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:49:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:49:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:49:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:49:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:50:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:50:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:50:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:50:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:51:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:51:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:51:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:51:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:52:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:52:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:52:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:52:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:53:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:53:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:53:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:53:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:54:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:54:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:54:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:54:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:55:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:55:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:55:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:55:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:56:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:56:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:56:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:56:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:57:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:57:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:57:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:57:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:58:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:58:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:58:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:58:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:59:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 22:59:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 22:59:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 22:59:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:00:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:00:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:00:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 719560 bytes
+2019-04-11 23:00:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:00:49 INFO HeartbeatThread_3 - new producer connected, group: CLIENT_INNER_PRODUCER channel: ClientChannelInfo [channel=[id: 0xccdbe2b0, L:/172.20.10.2:10911 - R:/172.20.10.2:59988], clientId=172.20.10.2@62003, language=JAVA, version=313, lastUpdateTimestamp=1554994849267]
+2019-04-11 23:00:49 INFO HeartbeatThread_3 - new producer connected, group: please_rename_unique_group_name channel: ClientChannelInfo [channel=[id: 0xccdbe2b0, L:/172.20.10.2:10911 - R:/172.20.10.2:59988], clientId=172.20.10.2@62003, language=JAVA, version=313, lastUpdateTimestamp=1554994849267]
+2019-04-11 23:00:59 INFO ClientManageThread_15 - unregister a producer[please_rename_unique_group_name] from groupChannelTable ClientChannelInfo [channel=[id: 0xccdbe2b0, L:/172.20.10.2:10911 - R:/172.20.10.2:59988], clientId=172.20.10.2@62003, language=JAVA, version=313, lastUpdateTimestamp=1554994859853]
+2019-04-11 23:00:59 INFO ClientManageThread_15 - unregister a producer group[please_rename_unique_group_name] from groupChannelTable
+2019-04-11 23:00:59 INFO ClientManageThread_16 - unregister a producer[CLIENT_INNER_PRODUCER] from groupChannelTable ClientChannelInfo [channel=[id: 0xccdbe2b0, L:/172.20.10.2:10911 - R:/172.20.10.2:59988], clientId=172.20.10.2@62003, language=JAVA, version=313, lastUpdateTimestamp=1554994859855]
+2019-04-11 23:00:59 INFO ClientManageThread_16 - unregister a producer group[CLIENT_INNER_PRODUCER] from groupChannelTable
+2019-04-11 23:01:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:01:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:01:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:01:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:02:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:02:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:02:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:02:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:03:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:03:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:03:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:03:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:04:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:04:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:04:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:04:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:05:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:05:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:05:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:05:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:06:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:06:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:06:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:06:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:07:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:07:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:07:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:07:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:08:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:08:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:08:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:08:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:09:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:09:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:09:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:09:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:10:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:10:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:10:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:10:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:11:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:11:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:11:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:11:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:12:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:12:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:12:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:12:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:13:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:13:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:13:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:13:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:14:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:14:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:14:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:14:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:15:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:15:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:15:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:15:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:16:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:16:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:16:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:16:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:17:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:17:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:17:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:17:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:18:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:18:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:18:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:18:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:19:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:19:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:19:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:19:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:20:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:20:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:20:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:20:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:21:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:21:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:21:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:21:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:22:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:22:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:22:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:22:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:23:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:23:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:23:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:23:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:24:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:24:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:24:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:24:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:25:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:25:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:25:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:25:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:26:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:26:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:26:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:26:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:27:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:27:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:27:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:27:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:28:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:28:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:28:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:28:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:29:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:29:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:29:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:29:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:30:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:30:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:30:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:30:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:31:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:31:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:31:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:31:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:32:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:32:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:32:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:32:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:33:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:33:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:33:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:33:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:34:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:34:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:34:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:34:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:35:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:35:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:35:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:35:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:36:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:36:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:36:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:36:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:37:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:37:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:37:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:37:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:38:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:38:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:38:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:38:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:39:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:39:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:39:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:39:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:40:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:40:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:40:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:40:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:41:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:41:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:41:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:41:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:42:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:42:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:42:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:42:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:43:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:43:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:43:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:43:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:44:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:44:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:44:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:44:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:45:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:45:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:45:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:45:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:46:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:46:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:46:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:46:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:47:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:47:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:47:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:47:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:48:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:48:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:48:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:48:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:49:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:49:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:49:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:49:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:50:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:50:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:50:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:50:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:51:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:51:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:51:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:51:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:52:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:52:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:52:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:52:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:53:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:53:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:53:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:53:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:54:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:54:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:54:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:54:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:55:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:55:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:55:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:55:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:56:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:56:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:56:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:56:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:57:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:57:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:57:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:57:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:58:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:58:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:58:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:58:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:59:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-11 23:59:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-11 23:59:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-11 23:59:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:00:00 INFO BrokerControllerScheduledThread1 - yesterday put message total: 2999
+2019-04-12 00:00:00 INFO BrokerControllerScheduledThread1 - yesterday get message total: 0
+2019-04-12 00:00:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:00:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:00:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:00:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:01:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:01:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:01:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:01:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:02:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:02:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:02:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:02:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:03:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:03:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:03:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:03:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:04:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:04:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:04:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:04:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:05:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:05:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:05:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:05:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:06:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:06:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:06:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:06:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:07:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:07:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:07:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:07:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:08:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:08:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:08:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:08:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:09:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:09:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:09:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:09:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:10:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:10:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:10:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:10:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:11:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:11:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:11:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:11:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:12:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:12:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:12:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:12:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:13:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:13:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:13:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:13:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:14:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:14:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:14:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:14:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:15:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:15:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:15:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:15:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:16:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:16:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:16:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:16:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:17:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:17:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:17:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:17:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:18:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:18:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:18:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:18:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:19:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:19:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:19:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:19:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:20:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:20:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:20:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:20:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:21:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:21:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:21:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:21:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:22:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:22:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:22:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:22:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:23:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:23:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:23:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:23:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:24:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:24:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:24:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:24:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:25:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:25:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:25:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:25:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:26:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:26:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:26:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:26:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:27:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:27:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:27:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:27:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:28:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:28:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:28:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:28:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:29:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:29:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:29:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:29:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:30:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:30:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:30:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:30:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:31:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:31:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:31:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:31:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:32:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:32:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:32:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:32:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:33:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:33:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:33:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:33:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:34:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:34:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:34:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:34:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:35:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:35:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:35:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:35:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:36:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:36:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:36:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:36:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:37:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:37:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:37:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:37:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:38:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:38:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:38:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:38:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:39:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:39:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:39:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:39:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:40:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:40:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:40:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:40:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:41:07 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:41:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:41:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:41:37 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:42:07 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:42:37 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:42:37 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:42:37 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:46:51 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:47:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:47:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:47:21 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:47:51 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:48:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:48:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:48:21 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:48:51 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:49:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:49:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:49:21 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:49:51 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:50:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:50:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:50:21 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:50:51 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:51:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:51:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:51:21 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:51:51 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:52:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:52:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:52:21 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:52:51 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:53:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:53:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:53:21 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:53:51 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:54:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:54:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:54:21 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:54:51 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:55:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:55:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:55:21 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:55:51 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:56:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:56:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:56:21 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:56:51 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:57:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:57:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:57:21 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:57:51 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:58:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:58:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:58:21 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:58:51 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:59:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 00:59:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 00:59:21 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 00:59:51 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:00:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:00:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:00:21 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:00:51 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:01:20 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:01:20 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:01:21 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:01:51 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:02:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:02:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:02:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:02:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:03:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:03:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:03:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:03:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:04:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:04:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:04:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:04:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:05:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:05:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:05:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:05:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:06:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:06:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:06:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:06:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:07:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:07:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:07:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:07:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:08:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:08:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:08:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:08:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:09:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:09:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:09:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:09:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:10:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:10:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:10:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:10:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:11:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:11:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:11:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:11:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:12:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:12:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:12:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:12:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:13:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:13:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:13:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:13:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:14:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:14:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:14:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:14:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:15:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:15:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:15:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:15:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:16:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:16:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:16:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:16:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:17:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:17:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:17:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:17:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:18:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:18:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:18:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:18:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:19:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:19:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:19:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:19:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:20:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:20:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:20:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:20:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:21:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:21:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:21:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:21:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:22:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:22:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:22:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:22:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:23:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:23:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:23:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:23:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:24:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:24:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:24:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:24:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:25:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:25:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:25:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:25:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:26:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:26:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:26:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:26:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:27:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:27:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:27:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:27:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:28:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:28:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:28:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:28:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:29:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:29:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:29:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:29:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:30:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:30:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:30:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:30:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:31:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:31:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:31:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:31:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:32:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:32:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:32:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:32:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:33:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:33:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:33:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:33:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:34:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:34:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:34:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:34:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:35:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:35:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:35:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:35:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:36:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:36:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:36:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:36:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:37:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:37:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:37:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:37:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:38:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:38:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:38:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:38:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:39:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:39:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:39:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:39:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:40:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:40:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:40:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:40:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:41:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:41:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:41:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:41:52 INFO brokerOutApi_thread_3 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:42:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:42:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:42:22 INFO brokerOutApi_thread_4 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:42:52 INFO brokerOutApi_thread_1 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:43:21 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2019-04-12 01:43:21 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 899272 bytes
+2019-04-12 01:43:22 INFO brokerOutApi_thread_2 - register broker[0]to name server 127.0.0.1:9876 OK
+2019-04-12 01:43:37 INFO ShutdownHook - Shutdown hook was invoked, 1
+2019-04-12 01:43:37 INFO ShutdownHook - Try to shutdown service thread:PullRequestHoldService started:true lastThread:Thread[PullRequestHoldService,5,main]
+2019-04-12 01:43:37 INFO ShutdownHook - shutdown thread PullRequestHoldService interrupt false
+2019-04-12 01:43:37 INFO PullRequestHoldService - PullRequestHoldService service end
+2019-04-12 01:43:37 INFO ShutdownHook - join thread PullRequestHoldService eclipse time(ms) 1 90000
+2019-04-12 01:43:42 INFO ShutdownHook - Try to shutdown service thread:FileWatchService started:true lastThread:Thread[FileWatchService,5,main]
+2019-04-12 01:43:42 INFO ShutdownHook - shutdown thread FileWatchService interrupt false
+2019-04-12 01:43:42 INFO FileWatchService - FileWatchService service end
+2019-04-12 01:43:42 INFO ShutdownHook - join thread FileWatchService eclipse time(ms) 0 90000
+2019-04-12 01:43:43 INFO ShutdownHook - Try to shutdown service thread:HAClient started:true lastThread:Thread[HAClient,5,main]
+2019-04-12 01:43:43 INFO ShutdownHook - shutdown thread HAClient interrupt false
+2019-04-12 01:43:43 INFO ShutdownHook - join thread HAClient eclipse time(ms) 1 90000
+2019-04-12 01:43:43 INFO ShutdownHook - Try to shutdown service thread:AcceptSocketService started:true lastThread:Thread[AcceptSocketService,5,main]
+2019-04-12 01:43:43 INFO ShutdownHook - shutdown thread AcceptSocketService interrupt true
+2019-04-12 01:43:43 INFO ShutdownHook - join thread AcceptSocketService eclipse time(ms) 8 90000
+2019-04-12 01:43:43 INFO ShutdownHook - Try to shutdown service thread:GroupTransferService started:true lastThread:Thread[GroupTransferService,5,main]
+2019-04-12 01:43:43 INFO ShutdownHook - shutdown thread GroupTransferService interrupt false
+2019-04-12 01:43:43 INFO ShutdownHook - join thread GroupTransferService eclipse time(ms) 1 90000
+2019-04-12 01:43:43 INFO ShutdownHook - Try to shutdown service thread:StoreStatsService started:true lastThread:Thread[StoreStatsService,5,main]
+2019-04-12 01:43:43 INFO ShutdownHook - shutdown thread StoreStatsService interrupt false
+2019-04-12 01:43:43 INFO ShutdownHook - join thread StoreStatsService eclipse time(ms) 0 90000
+2019-04-12 01:43:43 INFO ShutdownHook - Try to shutdown service thread:FlushRealTimeService started:true lastThread:Thread[FlushRealTimeService,5,main]
+2019-04-12 01:43:43 INFO ShutdownHook - shutdown thread FlushRealTimeService interrupt false
+2019-04-12 01:43:43 INFO ShutdownHook - join thread FlushRealTimeService eclipse time(ms) 1 300000
+2019-04-12 01:43:43 INFO ShutdownHook - Try to shutdown service thread:ReputMessageService started:true lastThread:Thread[ReputMessageService,5,main]
+2019-04-12 01:43:43 INFO ShutdownHook - shutdown thread ReputMessageService interrupt false
+2019-04-12 01:43:43 INFO ShutdownHook - join thread ReputMessageService eclipse time(ms) 1 90000
+2019-04-12 01:43:43 INFO ShutdownHook - Try to shutdown service thread:FlushConsumeQueueService started:true lastThread:Thread[FlushConsumeQueueService,5,main]
+2019-04-12 01:43:43 INFO ShutdownHook - shutdown thread FlushConsumeQueueService interrupt false
+2019-04-12 01:43:43 INFO ShutdownHook - join thread FlushConsumeQueueService eclipse time(ms) 1 60000
+2019-04-12 01:43:43 INFO ShutdownHook - Try to shutdown service thread:AllocateMappedFileService started:true lastThread:Thread[AllocateMappedFileService,5,main]
+2019-04-12 01:43:43 INFO ShutdownHook - shutdown thread AllocateMappedFileService interrupt true
+2019-04-12 01:43:43 INFO ShutdownHook - join thread AllocateMappedFileService eclipse time(ms) 1 90000
+2019-04-12 01:43:43 WARN ShutdownHook - unregisterBroker Exception, 127.0.0.1:9876
+org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to <127.0.0.1:9876> failed
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient.invokeSync(NettyRemotingClient.java:392) ~[classes/:na]
+	at org.apache.rocketmq.broker.out.BrokerOuterAPI.unregisterBroker(BrokerOuterAPI.java:249) ~[classes/:na]
+	at org.apache.rocketmq.broker.out.BrokerOuterAPI.unregisterBrokerAll(BrokerOuterAPI.java:226) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.unregisterBrokerAll(BrokerController.java:811) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.shutdown(BrokerController.java:754) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup$1.run(BrokerStartup.java:235) [classes/:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+2019-04-12 01:43:43 INFO ShutdownHook - Try to shutdown service thread:FileWatchService started:false lastThread:Thread[FileWatchService,5,]
+2019-04-12 01:43:43 INFO ShutdownHook - Try to shutdown service thread:TransactionalMessageCheckService started:true lastThread:Thread[TransactionalMessageCheckService,5,main]
+2019-04-12 01:43:43 INFO ShutdownHook - shutdown thread TransactionalMessageCheckService interrupt false
+2019-04-12 01:43:43 INFO ShutdownHook - join thread TransactionalMessageCheckService eclipse time(ms) 0 90000
+2019-04-12 01:43:43 INFO ShutdownHook - Shutdown hook over, consuming total time(ms): 5929
