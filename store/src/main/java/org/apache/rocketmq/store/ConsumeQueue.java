@@ -151,6 +151,7 @@ public class ConsumeQueue {
         }
     }
 
+    // 注释4.5.2：二分查找获取某个时间戳
     public long getOffsetInQueueByTime(final long timestamp) {
         MappedFile mappedFile = this.mappedFileQueue.getMappedFileByTime(timestamp);
         if (mappedFile != null) {
@@ -417,6 +418,7 @@ public class ConsumeQueue {
         this.defaultMessageStore.getRunningFlags().makeLogicsQueueError();
     }
 
+    // 注释4.6.1：操作 bytebuffer 进行写入到 mappedFile 中，但是没有落盘
     private boolean putMessagePositionInfo(final long offset, final int size, final long tagsCode,
         final long cqOffset) {
 

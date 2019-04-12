@@ -198,6 +198,7 @@ public class IndexService {
         return topic + "#" + key;
     }
 
+    // 注释4.6.2：复杂的构建文件hash索引
     public void buildIndex(DispatchRequest req) {
         IndexFile indexFile = retryGetAndCreateIndexFile();
         if (indexFile != null) {

@@ -113,7 +113,127 @@ IndexFile 索引文件，加速消息检索，根据消息的属性快速从 Com
 
 ## 4.3 消息发送存储流程
 
+## 4.4 存储文件组织与内存映射
+
+CommitLog、ConsumeQueue、IndexFile：单个文件固定长度，文件名为该文件第一条消息对应的全局物理偏移量
+
+### 4.4.1 MappedFileQueue 映射文件队列
+
+MappedFileQueue 是对存储目录的封装，即作为一个文件夹，下面包含多个文件
+
+### 4.4.2 MappedFile 内存映射文件
+
+勘误：第96页，不是 MappedFile 的 shutdown 而应该是 ReferenceResource 的 shutdown，
+其中使用了引用计数关闭
+
+### 4.4.3 TransientStorePool
+
+短暂的存储池，用来临时存储数据，数据先写入该内存映射中，然后由 commit 线程定时将数据从该
+内存复制到与目的物理文件对应的内存映射中  
+引入该机制主要原因是提供一种内存锁定，将当前堆外内存一直锁定在内存中，避免被进程将内存交换到磁盘。
+
+## 4.5 RocketMQ存储文件
+
+commitlog：消息存储目录  
+config：运行时配置  
+consumerFilter.json：主题消息过滤信息  
+consumerOffset.json：集群消费模式消息消费进度  
+delayOffset.json：延时消息队列拉取进度  
+subscriptionGroup.json：消息消费组配置信息  
+topics.json:topic配置属性  
+consumequeue：消息消费队列存储目录  
+index：消息索引文件存储目录  
+abort：如果存在，则说明 Broker 非正常关闭，启动时创建，正常退出前删除  
+checkpoint：存储 commitlog 文件最后一次刷盘时间戳 、consumequeue 最后一次刷盘时间、index 索引文件最后一次刷盘时间戳
+
+### 4.5.1 Commitlog文件
+
+![][1]
+
+### 4.5.2 ConsumeQueue文件
+
+同一主题的消息不连续地存储在 commitlog 文件中，如果需要查找某个主题下的消息，只能通过遍历，
+效率极低，因此设计了消息消费队列文件（ConsumeQueue），即作为 Commitlog 文件消息消费的"索引"
+文件，consumequeue 的第一级目录为消息主题，第二级目录为主题的消息队列   
+
+- Topic1   
+-------- 0  
+-------- 1  
+-------- 2  
+-------- 3  
+- Topic2   
+-------- 0  
+-------- 1  
+-------- 2  
+-------- 3  
+
+### 4.5.3 Index索引文件
+
+![][2]
+
+## 4.6 实时更新消息消费队列与索引文件
+
+消息消费队列文件、消息属性属性文件都是基于 CommitLog 文件构建，当消息生产者提交的消息存储在 CommitLog 文件中，
+ConsumeQueue、IndexFile 需要及时更新，否则消息无法及时被消费，而且查找消息也出现延迟   
+RocketMQ 通过开启一个线程 ReputMessageService 来准实时转发 CommitLog 文件更新事件（事件通知）
+
+### 4.6.1 根据消息更新 ConsumeQueue
+
+写入到 mappedFile，默认异步落盘
+
+### 4.6.2 根据消息更新 Index 索引文件
+
+## 4.7 消息队列与索引文件恢复
+
+问题：消息成功存储到 Commitlog，但是转发任务未执行，Broker 宕机，此时三个文件不一致   
+启动时通过判断 abort 文件的存在从而判断是否是异常宕机，初始化文件的偏移量，进行文件恢复
+
+### 4.7.1 Broker 正常停止文件恢复
+
+### 4.7.2 Broker 异常停止文件恢复
+
+## 4.8 文件刷盘机制
+
+基于 JDK NIO 的 MappedByteBuffer，内存映射机制，先将消息追加到内存，然后根据刷盘策略
+在不同的时间写入磁盘，如果是同步刷盘，消息追加到内存后，将同步调用 MappedByteBuffer.force(),
+如果是异步刷盘，则追加到内存后立刻返回给消息发送端  
+基于 Commitlog 文件刷盘机制分析，其它两个文件类似
+
+### 4.8.1 Broker 同步刷盘
+
+消息生产者在消息服务端将消息内容追加到内存映射文件后（内存），需要同步将内存的内容立刻
+刷写到磁盘，其中是堆外内存保证零拷贝效率，MappedByteBuffer.force 保证写入
+
+### 4.8.2 Broker 异步刷盘
+
+1. 将消息直接追加到 ByteBuffer(Direct)，wrotePostion 随着消息追加而移动  
+2. CommitRealTimeService 线程每200ms将Buffer新追加的内容的数据提交到MappedByteBuffer
+3. FlushRealTimeService 线程每500ms将MappedByteBuffer中新追加的内存通过调用
+MappedByteBuffer.force 写入到磁盘  
+
+## 4.9 过期文件删除机制
+
+超过72小时的两个文件，无论消息是否被消费，都被删除
+
+## 4.10 总结
+
+消息到达 commitlog 通过定时线程转发到 consumequeue/indexFile  
+使用 abort 文件做异常宕机的记录
+
+# 5 消息消费 
+
+## 5.1 消息消费概述
+
+集群模式、广播模式  
+推模式、拉模式
+
+## 5.2 消息消费者初探
+
+
+
 
 
 [0]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/4_1.png
-
+[1]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/4_2.png
+[2]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/4_3.png
+[3]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/4_4.png

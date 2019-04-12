@@ -35,15 +35,17 @@ public class MappedFileQueue {
 
     private static final int DELETE_FILES_BATCH_MAX = 10;
 
+    // 注释4.4.1：存储目录路径
     private final String storePath;
-
+    // 注释4.4.1：单个文件的存储大小
     private final int mappedFileSize;
-
+    // 注释4.4.1：MappedFile 文件集合
     private final CopyOnWriteArrayList<MappedFile> mappedFiles = new CopyOnWriteArrayList<MappedFile>();
 
     private final AllocateMappedFileService allocateMappedFileService;
-
+    // 注释4.4.1：当前刷盘指针，表示该指针之前的所有数据全部持久化到了磁盘
     private long flushedWhere = 0;
+    // 注释4.4.1：当前数据提交指针，内存中 ByteBuffer 当前的写指针，该值>=flushedWhere，即中间差是在内存中但是还没写入磁盘的区域
     private long committedWhere = 0;
 
     private volatile long storeTimestamp = 0;
@@ -74,6 +76,7 @@ public class MappedFileQueue {
         }
     }
 
+    // 注释4.4.1：从该目录下遍历所有文件，根据最近更新时间筛选，找不到就返回最新的文件
     public MappedFile getMappedFileByTime(final long timestamp) {
         Object[] mfs = this.copyMappedFiles(0);
 
@@ -458,6 +461,7 @@ public class MappedFileQueue {
      * @param offset Offset.
      * @param returnFirstOnNotFound If the mapped file is not found, then return the first one.
      * @return Mapped file or null (when not found and returnFirstOnNotFound is <code>false</code>).
+     * 注释4.4.1：通过消息偏移量offset查找对应消息文件，因为有定时删除文件机制，因此需要 % 机制
      */
     public MappedFile findMappedFileByOffset(final long offset, final boolean returnFirstOnNotFound) {
         try {

@@ -59,6 +59,9 @@ import org.apache.rocketmq.store.index.QueryOffsetResult;
 import org.apache.rocketmq.store.schedule.ScheduleMessageService;
 import org.apache.rocketmq.store.stats.BrokerStatsManager;
 
+/**
+ * 注释4.3：存储入口
+ */
 public class DefaultMessageStore implements MessageStore {
     private static final InternalLogger log = InternalLoggerFactory.getLogger(LoggerName.STORE_LOGGER_NAME);
 
@@ -172,11 +175,13 @@ public class DefaultMessageStore implements MessageStore {
 
     /**
      * @throws IOException
+     * 注释4.7：存储文件初始加载
      */
     public boolean load() {
         boolean result = true;
 
         try {
+            // 注释4.7：判断 abort 是否存在，来判断是否上次异常 Broker 停止
             boolean lastExitOK = !this.isTempFileExist();
             log.info("last shutdown {}", lastExitOK ? "normally" : "abnormally");
 
@@ -256,6 +261,7 @@ public class DefaultMessageStore implements MessageStore {
             }
             log.info("[SetReputOffset] maxPhysicalPosInLogicQueue={} clMinOffset={} clMaxOffset={} clConfirmedOffset={}",
                 maxPhysicalPosInLogicQueue, this.commitLog.getMinOffset(), this.commitLog.getMaxOffset(), this.commitLog.getConfirmOffset());
+            // 注释4.6：ReputMessageService 线程
             this.reputMessageService.setReputFromOffset(maxPhysicalPosInLogicQueue);
             this.reputMessageService.start();
 
@@ -1222,6 +1228,7 @@ public class DefaultMessageStore implements MessageStore {
 
     private void addScheduleTask() {
 
+        // 注释4.9：资源删除自动任务
         this.scheduledExecutorService.scheduleAtFixedRate(new Runnable() {
             @Override
             public void run() {
@@ -1265,6 +1272,7 @@ public class DefaultMessageStore implements MessageStore {
         // }, 1, 1, TimeUnit.HOURS);
     }
 
+    // 注释4.8.2：清除两个文件任务
     private void cleanFilesPeriodically() {
         this.cleanCommitLogService.run();
         this.cleanConsumeQueueService.run();
@@ -1424,6 +1432,7 @@ public class DefaultMessageStore implements MessageStore {
         }
     }
 
+    // 注释4.6.1：进行消息消费队列转发
     public void putMessagePositionInfo(DispatchRequest dispatchRequest) {
         ConsumeQueue cq = this.findConsumeQueue(dispatchRequest.getTopic(), dispatchRequest.getQueueId());
         cq.putMessagePositionInfoWrapper(dispatchRequest);
@@ -1495,6 +1504,9 @@ public class DefaultMessageStore implements MessageStore {
         }
     }
 
+    /**
+     * 注释4.6.2：消息转发到索引文件
+     */
     class CommitLogDispatcherBuildIndex implements CommitLogDispatcher {
 
         @Override
@@ -1541,6 +1553,7 @@ public class DefaultMessageStore implements MessageStore {
             int destroyMapedFileIntervalForcibly = DefaultMessageStore.this.getMessageStoreConfig().getDestroyMapedFileIntervalForcibly();
 
             boolean timeup = this.isTimeToDelete();
+            // 注释4.8.2：磁盘是否充足
             boolean spacefull = this.isSpaceToDelete();
             boolean manualDelete = this.manualDeleteFileSeveralTimes > 0;
 
@@ -1882,6 +1895,7 @@ public class DefaultMessageStore implements MessageStore {
             }
         }
 
+        // 注释4.6：线程推送 CommitLog 消息变更事件到消费队列和索引文件
         @Override
         public void run() {
             DefaultMessageStore.log.info(this.getServiceName() + " service started");

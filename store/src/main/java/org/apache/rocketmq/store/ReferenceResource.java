@@ -40,6 +40,7 @@ public abstract class ReferenceResource {
         return this.available;
     }
 
+    // 注释4.4.2 关闭资源
     public void shutdown(final long intervalForcibly) {
         if (this.available) {
             this.available = false;

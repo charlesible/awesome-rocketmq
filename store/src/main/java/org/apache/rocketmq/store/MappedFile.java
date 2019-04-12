@@ -41,29 +41,45 @@ import org.apache.rocketmq.store.config.FlushDiskType;
 import org.apache.rocketmq.store.util.LibC;
 import sun.nio.ch.DirectBuffer;
 
+/**
+ * 注释4.4.2：具体的某个内存映射文件
+ */
 public class MappedFile extends ReferenceResource {
+    // 注释4.4.2：操作系统每页大小，默认4K
     public static final int OS_PAGE_SIZE = 1024 * 4;
     protected static final InternalLogger log = InternalLoggerFactory.getLogger(LoggerName.STORE_LOGGER_NAME);
-
+    // 注释4.4.2：当前JVM实例中 MappedFile 虚拟内存
     private static final AtomicLong TOTAL_MAPPED_VIRTUAL_MEMORY = new AtomicLong(0);
-
+    // 注释4.4.2：当前JVM实例中 MappedFile 对象个数
     private static final AtomicInteger TOTAL_MAPPED_FILES = new AtomicInteger(0);
+    // 注释4.4.2：当前该文件的写指针
     protected final AtomicInteger wrotePosition = new AtomicInteger(0);
     //ADD BY ChenYang
+    // 注释4.4.2：但你给钱文件的提交指针，开启了 transientStorePoolEnable，则数据会存储在 TransientStorePool中，然后提交到内存映射 ByteBuffer中，再刷盘
     protected final AtomicInteger committedPosition = new AtomicInteger(0);
+    // 注释4.4.2：刷写到磁盘指针，该指针之前的数据持久化到磁盘中
     private final AtomicInteger flushedPosition = new AtomicInteger(0);
+    // 注释4.4.2：文件大小
     protected int fileSize;
+    // 注释4.4.2：文件通道NIO
     protected FileChannel fileChannel;
     /**
      * Message will put to here first, and then reput to FileChannel if writeBuffer is not null.
+     * 注释4.4.2：堆内存 ByteBuffer，如果不为空，数据首先将存储在该 Buffer，然后提交到 MappedFile 对应的内存映射文件 Buffer（transientStorePoolEnable为true时不为空）
      */
     protected ByteBuffer writeBuffer = null;
+    // 注释4.4.2：堆内存池，transientStorePoolEnable 为 true 时启用
     protected TransientStorePool transientStorePool = null;
     private String fileName;
+    // 注释4.4.2：文件初始偏移量
     private long fileFromOffset;
+    // 注释4.4.2：对应的物理文件
     private File file;
+    // 注释4.4.2：物理文件对应的内存映射 Buffer
     private MappedByteBuffer mappedByteBuffer;
+    // 注释4.4.2：文件最后一次写入时间
     private volatile long storeTimestamp = 0;
+    // 注释4.4.2：是否是 MappedFileQueue(目录) 队列中的第一个文件
     private boolean firstCreateInQueue = false;
 
     public MappedFile() {
@@ -198,6 +214,7 @@ public class MappedFile extends ReferenceResource {
         return appendMessagesInner(messageExtBatch, cb);
     }
 
+    // 注释4.3：commitLog等文件操作，会走到这里，根据 pos 进行插入，通过 mapped 实现文件映射，即零拷贝
     public AppendMessageResult appendMessagesInner(final MessageExt messageExt, final AppendMessageCallback cb) {
         assert messageExt != null;
         assert cb != null;
@@ -269,6 +286,7 @@ public class MappedFile extends ReferenceResource {
 
     /**
      * @return The current flushed position
+     * 注释4.4.2：将内存中的互数据写到磁盘中
      */
     public int flush(final int flushLeastPages) {
         if (this.isAbleToFlush(flushLeastPages)) {
@@ -280,6 +298,7 @@ public class MappedFile extends ReferenceResource {
                     if (writeBuffer != null || this.fileChannel.position() != 0) {
                         this.fileChannel.force(false);
                     } else {
+                        // 注释4.8.1：同步落盘
                         this.mappedByteBuffer.force();
                     }
                 } catch (Throwable e) {
