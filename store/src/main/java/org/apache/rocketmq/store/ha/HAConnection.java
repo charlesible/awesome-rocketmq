@@ -32,8 +32,11 @@ public class HAConnection {
     private static final InternalLogger log = InternalLoggerFactory.getLogger(LoggerName.STORE_LOGGER_NAME);
     private final HAService haService;
     private final SocketChannel socketChannel;
+    // 注释7.1.5：客户端连接地址
     private final String clientAddr;
+    // 注释7.1.5：服务端向从服务器写数据类
     private WriteSocketService writeSocketService;
+    // 注释7.1.5：服务端从从服务器读数据类
     private ReadSocketService readSocketService;
 
     private volatile long slaveRequestOffset = -1;
@@ -79,6 +82,7 @@ public class HAConnection {
     }
 
     class ReadSocketService extends ServiceThread {
+        // 注释7.1.5：网络读取缓存区大小
         private static final int READ_MAX_BUFFER_SIZE = 1024 * 1024;
         private final Selector selector;
         private final SocketChannel socketChannel;
@@ -100,6 +104,7 @@ public class HAConnection {
             while (!this.isStopped()) {
                 try {
                     this.selector.select(1000);
+                    // 注释7.1.3：通知主从复制情况
                     boolean ok = this.processReadEvent();
                     if (!ok) {
                         HAConnection.log.error("processReadEvent error");

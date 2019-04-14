@@ -366,10 +366,71 @@ FilterServer将消息拉取请求转发给 Broker，Broker返回消息后在 Fil
 
 ## 6.2 FilterServer 注册剖析
 
+## 6.3 类过滤模式订阅机制
 
+## 6.4 消息拉取
 
+消息拉取时，判断消息过滤模式是否为 classFilter，将拉取消息服务器地址由原来的 Broker
+地址转换成该 Broker 服务器所对应的 FilterServer
 
 # 7 RocketMQ 主从同步(HA)机制
+
+HAService：主从同步核心实现类
+HAService$AcceptSocketService：HA Master 端监听客户端连接实现类
+HAService$GroupTransferService：主从同步通知实现类
+HAService$HAClient：HA Client端实现类
+HAConnection：HA Master 服务端HA 连接对象的封装，与 Broker 从服务器的网络读写实现类
+HAConnection$ReadSocketService：HA Master 网络读实现类
+HAConnection$WriteSockketService：HA Master 网络写实现类
+
+##  7.1 主从复制原理
+
+### 7.1.1 HAService 整体工作机制
+
+1. 从服务器主动连接主服务器，主服务器接收客户端的连接
+2. 从服务器主动向主服务器发送待拉取消息偏移量，主服务器解析请求并返回消息给从服务器
+3. 从服务器保存消息并继续发发送新的消息同步请求
+
+### 7.1.2 AcceptSocketService 实现原理
+
+标准NIO的服务端请求，选择器每1s处理一次连接就绪事件，HAConnection将负责M-S数据同步逻辑
+
+### 7.1.3 GroupTransferService 实现原理
+
+同步阻塞实现，即M-S-sync  
+消息发送者将消息刷写到磁盘后，需要继续等待新数据被传输到从服务器，从服务器数据的复制
+是在另一个线程 HAConnection 中拉去，消息发送者在这里需要等待数据传输的结果
+
+### 7.1.4 HAClient 实现原理 
+
+### 7.1.5 HAConnection 实现原理
+
+![][10]
+
+## 7.2 读写分离机制
+
+同一组Broker(M-S)服务器，它们的brokerName相同但brokerId不同，主为0，从>0，
+
+## 7.3 本章小结
+
+HA 核心是实现是从服务器在启动的时候主动向主服务器建立 TCP长连接，获取服务器的 commitlog
+最大偏移量，以此偏移量向主服务器主动拉取消息，循环进行，达到主从服务器数据同步  
+读写分离：消费者先向主服务器发起拉取请求，然后主服务器返回一批消息，并根据主服务器负载压力
+与主从同步情况，向`从服务器`(勘误：消费者服务器)建议下次消息拉取是从主服务器还是从从服务器拉取  
+  
+勘误：224页，`从服务器`应该改为`向消费者服务器`
+
+#  8 事务消息
+
+## 8.1 事务消息实现思想
+
+## 8.2 事务消息发送流程
+
+## 8.3 提交或回滚你事务
+
+## 8.4 事务消息回查事务状态
+
+## 8.5 本章小结
 
 [0]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/4_1.png
 [1]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/4_2.png
@@ -381,3 +442,4 @@ FilterServer将消息拉取请求转发给 Broker，Broker返回消息后在 Fil
 [7]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/5_4.png
 [8]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/5_5.png
 [9]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/6_1.png
+[10]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/7_1.png

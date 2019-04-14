@@ -105,6 +105,7 @@ public class HAService {
     // this.groupTransferService.notifyTransferSome();
     // }
 
+    // 注释7.1.1：主服务器启动监听从服务器的连接
     public void start() throws Exception {
         this.acceptSocketService.beginAccept();
         this.acceptSocketService.start();
@@ -195,6 +196,7 @@ public class HAService {
 
         /**
          * {@inheritDoc}
+         * 注释7.1.2：执行NIO服务端监听
          */
         @Override
         public void run() {
@@ -274,7 +276,7 @@ public class HAService {
             this.requestsWrite = this.requestsRead;
             this.requestsRead = tmp;
         }
-
+        // 注释7.1.3：消息发送者返回有两种情况：等待超过1000*5=5s或GroupTransferService通知主从复制完成
         private void doWaitTransfer() {
             synchronized (this.requestsRead) {
                 if (!this.requestsRead.isEmpty()) {
@@ -322,9 +324,11 @@ public class HAService {
             return GroupTransferService.class.getSimpleName();
         }
     }
-
+    // 注释7.1.4：主从同步Slave端实现
     class HAClient extends ServiceThread {
+        // 注释7.1.4：Socket读缓存区大小
         private static final int READ_MAX_BUFFER_SIZE = 1024 * 1024 * 4;
+        // 注释7.1.4：master地址
         private final AtomicReference<String> masterAddress = new AtomicReference<>();
         private final ByteBuffer reportOffset = ByteBuffer.allocate(8);
         private SocketChannel socketChannel;

@@ -51,7 +51,7 @@ public class FilterServerManager {
     }
 
     public void start() {
-
+        // 注释6.2：调用Filter创建
         this.scheduledExecutorService.scheduleAtFixedRate(new Runnable() {
             @Override
             public void run() {
