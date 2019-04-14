@@ -229,11 +229,155 @@ MappedByteBuffer.force 写入到磁盘
 
 ## 5.2 消息消费者初探
 
+## 5.3 消费者启动流程
+
+## 5.4 消息拉取
+
+### 5.4.1 PullMessageService 实现机制
+
+如何实现：一个消息队列在同一时间只允许被一个消息消费者消息，一个消息小飞飞着可以同时消费多个消息队列
+
+### 5.4.2 ProcessQueue 实现机制
+
+ProcessQueue 是 MessageQueue 在消费端的重现、快照？  
+PullMessageService 从消息服务器默认每次拉取32条消息，按消息的队列偏移量顺序存放在 ProcessQueue 中  
+PullMessageService 然后将消息提交到消费者消费线程池，消息成功消费后从 ProcessQueue 中移除
+
+### 5.4.3 消息拉取基本流程
+
+1. 消息拉取看客户端消息拉取请求封装
+2. 消息服务器查找并返回消息
+3. 消息拉取客户端处理返回的消息
+
+![][4]
+  
+通过长轮询向消息服务端发送拉取请求，如果消息消费者向 RocketMQ 发送消息拉取时，消息并未到达
+消费队列，如果不启用长轮询机制，则会在服务端等待 shortPollingTimeMills 时间后（挂起）
+再去判断消息是否已达到消息队列，如果消息未到达则提示消息拉取客户端不存在。  
+如果开启了长轮询模式，RocketMQ 以方便会每 5s 轮询检查一次消息是否可达，同时一有新消息达到
+后立马通知挂起线程再次验证新消息是否是自己感兴趣的消息，如果是则从 commitlog 文件提取消息
+返回给消息拉取客户端，否则直到挂起超时，push超时时间默认 15s。pull模式通过 
+
+## 5.5 消息队列负载与重新分布机制
+
+消息队列重新分布通过 RebalanceService 线程实现
+
+![][5]
+
+## 5.6 消息消费过程
+
+消息拉取：PullMessageService 负责怼消息队列进行消息拉取，从远端服务器拉取消息后将
+消息存入 ProcessQueue 消息队列处理队列中，然后调用 ConsumeMessageService.submitConsumeRequest()
+进行方法消费，消息拉取与消息消费解耦
+
+### 5.6.1 消息消费
+
+### 5.6.2 消息确认（ACK）
+
+消息监听器返回的消息结果为 RECONSUME_LATER，则需要将这些消息发送给 Broker 延迟消息。
+如果发送 ACK 消息失败，将延迟 5s 后提交线程池进行消费
+
+### 5.6.3 消费进度管理
+
+消息消费者在消费一批消息后，需要记录该批消息已经消费完毕，即消息进度文件  
+广播模式：同一个消费组的所有消息都需要消费主体下的所有消息，即消息进度需要独立存储，最
+理想的存储地方应该是与消费者绑定  
+集群模式：同一个消费组内的所有消息消费者共享消息主题下的所有消息，所以消费进度需要保存
+在一个每个消费者都能访问到的地方
+
+![][6]
+
+## 5.7 定时消息机制
+
+消息发送到 Broker 后，等到特定的时间后才能被消费，RocketMQ 并不支持任意的时间精度，
+如果要支持任意时间精度的定时调度，不可避免地需要在 Broker 层做消息排序（ScheduledExecutorService），
+再加上持久化方面的考量，将不可避免地带来巨大的性能消耗，所以 RocketMQ 只支持特定级别的延迟消息，
+在 Broker 端通过 messageDelayLevel 配置：默认为 1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 
+8m 9m 10m 20m 30m 1h 2h，delayLevel=1 表示延迟1s。  
+定时任务，前面的消息重试也是借助的定时任务实现，在将消息存入 commitlog 文件之前需要判断
+消息的重试次数，如果大于0，则会将消息的主题设置为 SCHEDULE_TOPIC_XXXX
+
+### 5.7.1 load 方法
+
+### 5.7.2 start 方法
+
+### 5.7.3 定时调度逻辑
+
+为每个延迟级别创建一个调度任务，每一个延迟级别对应 SCHEDULE_TOPIC_XXXX 主题下的一个
+消息消费队列
+
+整体流程：  
+1. 消息消费者发送消息，如果发送消息的 delayLevel 大于0，则改变消息主题为 SCHEDULE_TOPIC_XXXX，
+消息队列为 delayLevel-1  
+2. 消息经由 commitlog 转发消息消费队列  
+3. 定时任务每隔1s 根据上次拉取偏移量从消费队列中取出所有消息  
+4. 根据消息的物理偏移量与消息大小从 commitlog 中拉取消息
+5. 根据消息属性重新创建消息，存入 commitlog 文件
+6. 转发到原 Topic 的消息消费队列，供消息消费者消费
+
+![][7]
+
+## 5.8 消息过滤机制
+
+提交一个过滤雷到 FilterServer，消息消费者从 FilterServer 拉取消息。表达式纷纷为 TAG
+与 SQL92 表达式  
+commitlog 存储的是消息的 tag 的hashcode，直接对比 hashcode
+
+## 5.9 顺序消费
+
+支持局部消息顺序消费，即确保同一个消息消费队列中的消息被顺序消费，如果需要做到全局顺序
+消费则考科一将主题匹配成一个队列，例如数据库 BinLog 等要求严格顺序的场景
+
+### 5.9.1 消息队列负载
+
+需要先通过 RebalanceService 线程实现消息队列的负载，集群模式下同一个消费组内的消费者
+共同承担其订阅主题下消息队列的消费，同一个消息消费队列在同一时刻只会被消费组内一个消费者消费，
+一个消费者同一时刻可以分配多个消费队列  
+拉取任务时需要在 Broker 服务器锁定该消息队列
+
+### 5.9.2 消息拉取
+
+### 5.9.3 消息消费
+
+当一个新的消费队列分配给消费者时，在添加其拉取任务之前必须向 Broker 发送对该消息队列加锁请求
+
+### 5.9.4 消息队列锁实现
+
+## 5.10 总结
+
+消息队列负载20s一次  
+消息拉取线程默认一次批量拉取32条消息，会有消息拉取流控可控制  
+不支持任意精度的定时调度，延迟级别是有固定的消息消费队列主题来支持  
+顺序消费一般使用集群模式时，必须锁定消息消费队列，在 Broker 端会存储消息消费队列的锁占用情况
+
+![][8]
+
+# 6 消息过滤 FilterServer
+
+## 6.1 ClassFilter 运行机制
+
+1. Broker 进程所在的服务器会启动多个 FilterServer 进程
+2. 消费者在订阅消息主题时会上传一个自定义的消息过滤实现类，FilterServer加载并实例化
+3. 消息消费者向FilterServer发送消息拉取请求，FilterServer接收到消息消费者消息拉取请求后，
+FilterServer将消息拉取请求转发给 Broker，Broker返回消息后在 FilterServer端执行消息过滤
+逻辑，然后返回消息
+
+![][9]
+
+## 6.2 FilterServer 注册剖析
 
 
 
+
+# 7 RocketMQ 主从同步(HA)机制
 
 [0]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/4_1.png
 [1]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/4_2.png
 [2]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/4_3.png
 [3]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/4_4.png
+[4]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/5_1.png
+[5]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/5_2.png
+[6]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/5_3.png
+[7]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/5_4.png
+[8]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/5_5.png
+[9]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/6_1.png

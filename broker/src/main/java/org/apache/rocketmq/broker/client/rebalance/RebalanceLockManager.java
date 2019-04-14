@@ -32,6 +32,7 @@ public class RebalanceLockManager {
     private final static long REBALANCE_LOCK_MAX_LIVE_TIME = Long.parseLong(System.getProperty(
         "rocketmq.broker.rebalance.lockMaxLiveTime", "60000"));
     private final Lock lock = new ReentrantLock();
+    // 注释5.9.4：锁容器，以消息消费组分组，每个消息队列对应一个锁对象，表示当前该消息队列被消费组中哪个消费者所持有
     private final ConcurrentMap<String/* group */, ConcurrentHashMap<MessageQueue, LockEntry>> mqLockTable =
         new ConcurrentHashMap<String, ConcurrentHashMap<MessageQueue, LockEntry>>(1024);
 

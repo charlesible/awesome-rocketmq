@@ -22,14 +22,14 @@ import org.apache.rocketmq.common.MixAll;
 public class SubscriptionGroupConfig {
 
     private String groupName;
-
+    // 注释5.6.2：是否可以消费，如果为 false，则消费组无法拉取消息，从而无法消费
     private boolean consumeEnable = true;
     private boolean consumeFromMinEnable = true;
-
+    // 注释5.6.2：是否能广播模式消费
     private boolean consumeBroadcastEnable = true;
-
+    // 注释5.6.2：重试队列个数，每个Broker上一个重试队列
     private int retryQueueNums = 1;
-
+    // 注释5.6.2：消息最大重试次数
     private int retryMaxTimes = 16;
 
     private long brokerId = MixAll.MASTER_ID;

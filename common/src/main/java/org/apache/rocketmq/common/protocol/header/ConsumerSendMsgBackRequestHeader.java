@@ -22,6 +22,7 @@ import org.apache.rocketmq.remoting.annotation.CFNotNull;
 import org.apache.rocketmq.remoting.annotation.CFNullable;
 import org.apache.rocketmq.remoting.exception.RemotingCommandException;
 
+// 注释5.6.2：请求协议头部信息
 public class ConsumerSendMsgBackRequestHeader implements CommandCustomHeader {
     @CFNotNull
     private Long offset;
@@ -33,6 +34,7 @@ public class ConsumerSendMsgBackRequestHeader implements CommandCustomHeader {
     private String originTopic;
     @CFNullable
     private boolean unitMode = false;
+    // 注释5.6.2：最大重新消费次数
     private Integer maxReconsumeTimes;
 
     @Override

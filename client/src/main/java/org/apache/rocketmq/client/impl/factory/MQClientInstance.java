@@ -235,6 +235,7 @@ public class MQClientInstance {
                     // Start various schedule tasks
                     this.startScheduledTask();
                     // Start pull service
+                    // 注释5.4.1：pull线程池启动
                     this.pullMessageService.start();
                     // Start rebalance service
                     this.rebalanceService.start();
@@ -300,6 +301,7 @@ public class MQClientInstance {
             @Override
             public void run() {
                 try {
+                    // 注释5.6.3：最终调用了 LocalFileOffsetStore.persistAll，每5s定时任务执行本地保存
                     MQClientInstance.this.persistAllConsumerOffset();
                 } catch (Exception e) {
                     log.error("ScheduledTask persistAllConsumerOffset exception", e);
@@ -953,6 +955,7 @@ public class MQClientInstance {
     }
 
     public void doRebalance() {
+        // 注释5.4：遍历已注册的消费者
         for (Map.Entry<String, MQConsumerInner> entry : this.consumerTable.entrySet()) {
             MQConsumerInner impl = entry.getValue();
             if (impl != null) {

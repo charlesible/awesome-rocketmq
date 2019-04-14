@@ -583,6 +583,7 @@ public class MQClientAPIImpl {
         return null;
     }
 
+    // 注释5.4.3：从 Broker 拉取消息的响应，通过回调返回
     private void pullMessageAsync(
         final String addr,
         final RemotingCommand request,

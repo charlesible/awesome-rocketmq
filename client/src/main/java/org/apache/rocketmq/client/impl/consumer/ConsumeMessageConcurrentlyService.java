@@ -50,14 +50,21 @@ import org.apache.rocketmq.remoting.common.RemotingHelper;
 
 public class ConsumeMessageConcurrentlyService implements ConsumeMessageService {
     private static final InternalLogger log = ClientLogger.getLog();
+    // 注释5.6：消息推模式实现类
     private final DefaultMQPushConsumerImpl defaultMQPushConsumerImpl;
+    // 注释5.6：消费者对象
     private final DefaultMQPushConsumer defaultMQPushConsumer;
+    // 注释5.6：并发消息业务事件类
     private final MessageListenerConcurrently messageListener;
+    // 注释5.6：消息消费任务队列
     private final BlockingQueue<Runnable> consumeRequestQueue;
+    // 注释5.6：消息消费线程池
     private final ThreadPoolExecutor consumeExecutor;
+    // 注释5.6：消费组
     private final String consumerGroup;
-
+    // 注释5.6：添加消费任务到延迟调度器
     private final ScheduledExecutorService scheduledExecutorService;
+    // 注释5.6：定时删除过期消息线程池
     private final ScheduledExecutorService cleanExpireMsgExecutors;
 
     public ConsumeMessageConcurrentlyService(DefaultMQPushConsumerImpl defaultMQPushConsumerImpl,
@@ -197,6 +204,7 @@ public class ConsumeMessageConcurrentlyService implements ConsumeMessageService 
         return result;
     }
 
+    // 注释5.6.1：消息消费
     @Override
     public void submitConsumeRequest(
         final List<MessageExt> msgs,
@@ -209,9 +217,11 @@ public class ConsumeMessageConcurrentlyService implements ConsumeMessageService 
             try {
                 this.consumeExecutor.submit(consumeRequest);
             } catch (RejectedExecutionException e) {
+                // 注释5.6.1：消息提交错误，之后5s再提交，但是由于使用的 LinkedBlockingQueue 无界队列，故不会出现拒绝提交异常
                 this.submitConsumeRequestLater(consumeRequest);
             }
         } else {
+            // 注释5.6.1：拉取消息分页拉取
             for (int total = 0; total < msgs.size(); ) {
                 List<MessageExt> msgThis = new ArrayList<MessageExt>(consumeBatchSize);
                 for (int i = 0; i < consumeBatchSize; i++, total++) {
@@ -384,6 +394,7 @@ public class ConsumeMessageConcurrentlyService implements ConsumeMessageService 
 
         @Override
         public void run() {
+            // 注释5.6.1：判断是否 drop，消息重新负载时，根据消息是否分配给消费组内其它消费者，来是否 drop
             if (this.processQueue.isDropped()) {
                 log.info("the message queue not be able to consume, because it's dropped. group={} {}", ConsumeMessageConcurrentlyService.this.consumerGroup, this.messageQueue);
                 return;
@@ -394,6 +405,7 @@ public class ConsumeMessageConcurrentlyService implements ConsumeMessageService 
             ConsumeConcurrentlyStatus status = null;
 
             ConsumeMessageContext consumeMessageContext = null;
+            // 注释5.6.1：执行钩子方法
             if (ConsumeMessageConcurrentlyService.this.defaultMQPushConsumerImpl.hasHook()) {
                 consumeMessageContext = new ConsumeMessageContext();
                 consumeMessageContext.setConsumerGroup(defaultMQPushConsumer.getConsumerGroup());
@@ -408,6 +420,7 @@ public class ConsumeMessageConcurrentlyService implements ConsumeMessageService 
             boolean hasException = false;
             ConsumeReturnType returnType = ConsumeReturnType.SUCCESS;
             try {
+                // 注释5.6.1：消息重试主题，即 SCHEDULE_TOPIC
                 ConsumeMessageConcurrentlyService.this.resetRetryTopic(msgs);
                 if (msgs != null && !msgs.isEmpty()) {
                     for (MessageExt msg : msgs) {
@@ -437,7 +450,7 @@ public class ConsumeMessageConcurrentlyService implements ConsumeMessageService 
             } else if (ConsumeConcurrentlyStatus.CONSUME_SUCCESS == status) {
                 returnType = ConsumeReturnType.SUCCESS;
             }
-
+            // 注释5.6.1：执行消息钩子方法
             if (ConsumeMessageConcurrentlyService.this.defaultMQPushConsumerImpl.hasHook()) {
                 consumeMessageContext.getProps().put(MixAll.CONSUME_CONTEXT_TYPE, returnType.name());
             }

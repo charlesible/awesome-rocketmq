@@ -38,6 +38,7 @@ import org.apache.rocketmq.remoting.exception.RemotingException;
 
 /**
  * Remote storage implementation
+ * 注释5.6.3：集群模式消息进度存储，即在消费者来看，是remote端
  */
 public class RemoteBrokerOffsetStore implements OffsetStore {
     private final static InternalLogger log = ClientLogger.getLog();

@@ -166,6 +166,7 @@ public abstract class RebalanceImpl {
         return false;
     }
 
+    // 注释5.9.3：执行锁定请求
     public void lockAll() {
         HashMap<String, Set<MessageQueue>> brokerMqs = this.buildProcessQueueTableByBrokerName();
 
@@ -216,6 +217,7 @@ public abstract class RebalanceImpl {
         }
     }
 
+    // 注释5.4：消费者获取Topic所在的所有Broker进行消费分布
     public void doRebalance(final boolean isOrder) {
         Map<String, SubscriptionData> subTable = this.getSubscriptionInner();
         if (subTable != null) {
@@ -273,10 +275,11 @@ public abstract class RebalanceImpl {
                 if (mqSet != null && cidAll != null) {
                     List<MessageQueue> mqAll = new ArrayList<MessageQueue>();
                     mqAll.addAll(mqSet);
-
+                    // 注释5.4：集群模式下排序，保证每个消费组看到的视图一致，同一个消费队列不会被多个消费者分配
                     Collections.sort(mqAll);
                     Collections.sort(cidAll);
-
+                    // 注释5.4：分配策略 {@link org.apache.rocketmq.client.consumer.rebalance 包下}
+                    // 一个消费者可以分配多个消息队列，一个消息队列只会分配一个消费者。因此如果消费者个数大于消息队列，则多的消费者无法消费消息
                     AllocateMessageQueueStrategy strategy = this.allocateMessageQueueStrategy;
 
                     List<MessageQueue> allocateResult = null;
@@ -328,6 +331,7 @@ public abstract class RebalanceImpl {
         }
     }
 
+    // 注释5.4：经过消费者负载之后，如果缓存表mqSet中没有了该topic，则执行 drop
     private boolean updateProcessQueueTableInRebalance(final String topic, final Set<MessageQueue> mqSet,
         final boolean isOrder) {
         boolean changed = false;
@@ -365,7 +369,8 @@ public abstract class RebalanceImpl {
                 }
             }
         }
-
+        // 注释5.9.1：分配到新的消息队列，首先需要尝试向 Broker 发起锁定该消息队列的请求，返回加锁成功则创建该消息队列
+        // 的拉取任务，否则将跳过，等待其它消费者释放该消息队列的锁
         List<PullRequest> pullRequestList = new ArrayList<PullRequest>();
         for (MessageQueue mq : mqSet) {
             if (!this.processQueueTable.containsKey(mq)) {
