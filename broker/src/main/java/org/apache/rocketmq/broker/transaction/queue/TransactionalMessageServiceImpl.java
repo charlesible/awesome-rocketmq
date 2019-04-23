@@ -117,6 +117,7 @@ public class TransactionalMessageServiceImpl implements TransactionalMessageServ
         }
     }
 
+    // 注释8.4：事务消息定时回查
     @Override
     public void check(long transactionTimeout, int transactionCheckMax,
         AbstractTransactionalMessageCheckListener listener) {
@@ -130,6 +131,7 @@ public class TransactionalMessageServiceImpl implements TransactionalMessageServ
             log.debug("Check topic={}, queues={}", topic, msgQueues);
             for (MessageQueue messageQueue : msgQueues) {
                 long startTime = System.currentTimeMillis();
+                // 注释8.4：获取对应的 Topic 的 Queue
                 MessageQueue opQueue = getOpQueue(messageQueue);
                 long halfOffset = transactionalMessageBridge.fetchConsumeOffset(messageQueue);
                 long opOffset = transactionalMessageBridge.fetchConsumeOffset(opQueue);
@@ -142,6 +144,7 @@ public class TransactionalMessageServiceImpl implements TransactionalMessageServ
 
                 List<Long> doneOpOffset = new ArrayList<>();
                 HashMap<Long, Long> removeMap = new HashMap<>();
+                // 注释8.4：根据当前处理进度依次从已处理队列拉取32条消息，判断是否回查过，直接跳过
                 PullResult pullResult = fillOpRemoveMap(removeMap, opQueue, opOffset, halfOffset, doneOpOffset);
                 if (null == pullResult) {
                     log.error("The queue={} check msgOffset={} with opOffset={} failed, pullResult is null",
@@ -151,8 +154,10 @@ public class TransactionalMessageServiceImpl implements TransactionalMessageServ
                 // single thread
                 int getMessageNullCount = 1;
                 long newOffset = halfOffset;
+                // 注释8.4：处理进度
                 long i = halfOffset;
                 while (true) {
+                    // 注释8.4：每个任务固定处理时长
                     if (System.currentTimeMillis() - startTime > MAX_PROCESS_TIME_LIMIT) {
                         log.info("Queue={} process time reach max={}", messageQueue, MAX_PROCESS_TIME_LIMIT);
                         break;

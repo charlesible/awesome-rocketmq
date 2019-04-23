@@ -424,13 +424,27 @@ HA 核心是实现是从服务器在启动的时候主动向主服务器建立 T
 
 ## 8.1 事务消息实现思想
 
+基于两阶段提交和定时事务状态回查决定消息最终是 commit/rollback  
+![][11]
+
 ## 8.2 事务消息发送流程
+
+![][12]
 
 ## 8.3 提交或回滚你事务
 
+第二阶段：提交或回滚事务  
+提交或回滚成功后，原消息不会物理删除，而是修改 Topic 逻辑删除
+
 ## 8.4 事务消息回查事务状态
 
+通过 TransactionalMessageCheckService 线程池定时检测 RMQ_SYS_TRANS_ HALF_TOPIC 消息，
+用户回查消息的事务状态
+
 ## 8.5 本章小结
+
+事务消息基于两阶段提交和定时任务事务状态回查机制
+![][13]
 
 [0]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/4_1.png
 [1]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/4_2.png
@@ -443,3 +457,6 @@ HA 核心是实现是从服务器在启动的时候主动向主服务器建立 T
 [8]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/5_5.png
 [9]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/6_1.png
 [10]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/7_1.png
+[11]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/8_1.png
+[12]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/8_2.png
+[13]: https://leran2deeplearnjavawebtech.oss-cn-beijing.aliyuncs.com/learn/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95/8_3.png
