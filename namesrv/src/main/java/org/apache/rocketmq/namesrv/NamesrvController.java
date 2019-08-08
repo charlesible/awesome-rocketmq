@@ -84,6 +84,7 @@ public class NamesrvController {
 
         this.registerProcessor();
 
+        /*删除不活跃路由*/
         this.scheduledExecutorService.scheduleAtFixedRate(new Runnable() {
 
             @Override
