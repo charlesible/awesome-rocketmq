@@ -66,7 +66,7 @@ public class BrokerOuterAPI {
     private BrokerFixedThreadPoolExecutor brokerOuterExecutor = new BrokerFixedThreadPoolExecutor(4, 10, 1, TimeUnit.MINUTES,
         new ArrayBlockingQueue<Runnable>(32), new ThreadFactoryImpl("brokerOutApi_thread_", true));
 
-    public BrokerOuterAPI(final NettyClientConfig nettyClientConfig) {
+    public  BrokerOuterAPI(final NettyClientConfig nettyClientConfig) {
         this(nettyClientConfig, null);
     }
 
@@ -171,6 +171,7 @@ public class BrokerOuterAPI {
         return registerBrokerResultList;
     }
 
+    /*注册netty调用层*/
     private RegisterBrokerResult registerBroker(
         final String namesrvAddr,
         final boolean oneway,

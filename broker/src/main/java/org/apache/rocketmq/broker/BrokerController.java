@@ -388,7 +388,7 @@ public class BrokerController {
             }, 1000 * 10, 1000 * 60, TimeUnit.MILLISECONDS);
 
             if (this.brokerConfig.getNamesrvAddr() != null) {
-                this.brokerOuterAPI.updateNameServerAddressList(this.brokerConfig.getNamesrvAddr());
+                this.brokerOuterAPI.updateNameServerAddressList(this.brokerConfig.getNamesrvAddr());//初始化namesrv地址
                 log.info("Set user specified name server address: {}", this.brokerConfig.getNamesrvAddr());
             } else if (this.brokerConfig.isFetchNamesrvAddrByAddressServer()) {
                 this.scheduledExecutorService.scheduleAtFixedRate(new Runnable() {
@@ -396,7 +396,7 @@ public class BrokerController {
                     @Override
                     public void run() {
                         try {
-                            BrokerController.this.brokerOuterAPI.fetchNameServerAddr();
+                            BrokerController.this.brokerOuterAPI.fetchNameServerAddr();//获取namesrv地址
                         } catch (Throwable e) {
                             log.error("ScheduledTask fetchNameServerAddr exception", e);
                         }
@@ -858,7 +858,7 @@ public class BrokerController {
         }
 
 
-
+        /*向namesrv注册*/
         this.registerBrokerAll(true, false, true);
 
         this.scheduledExecutorService.scheduleAtFixedRate(new Runnable() {
