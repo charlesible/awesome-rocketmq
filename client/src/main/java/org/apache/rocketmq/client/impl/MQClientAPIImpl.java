@@ -280,7 +280,7 @@ public class MQClientAPIImpl {
 
         throw new MQClientException(response.getCode(), response.getRemark());
     }
-
+    /*正常发送-0-oneway + sync*/
     public SendResult sendMessage(
         final String addr,
         final String brokerName,
@@ -293,7 +293,7 @@ public class MQClientAPIImpl {
     ) throws RemotingException, MQBrokerException, InterruptedException {
         return sendMessage(addr, brokerName, msg, requestHeader, timeoutMillis, communicationMode, null, null, null, 0, context, producer);
     }
-
+    /*正常发送-0-异步*/
     public SendResult sendMessage(
         final String addr,
         final String brokerName,
@@ -346,7 +346,7 @@ public class MQClientAPIImpl {
 
         return null;
     }
-
+    /*正常同步发送-1-sync*/
     private SendResult sendMessageSync(
         final String addr,
         final String brokerName,
@@ -358,7 +358,7 @@ public class MQClientAPIImpl {
         assert response != null;
         return this.processSendResponse(brokerName, msg, response);
     }
-
+    /*正常异步发送-1-async*/
     private void sendMessageAsync(
         final String addr,
         final String brokerName,

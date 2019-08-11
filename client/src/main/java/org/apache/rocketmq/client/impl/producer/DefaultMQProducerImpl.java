@@ -512,7 +512,7 @@ public class DefaultMQProducerImpl implements MQProducerInner {
     public void updateFaultItem(final String brokerName, final long currentLatency, boolean isolation) {
         this.mqFaultStrategy.updateFaultItem(brokerName, currentLatency, isolation);
     }
-
+    /*发送2-oneWay + sync*/
     private SendResult sendDefaultImpl(
         Message msg,
         final CommunicationMode communicationMode,

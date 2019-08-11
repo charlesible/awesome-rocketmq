@@ -130,6 +130,7 @@ public class MQAdminImpl {
         }
     }
 
+    /*查询该主题下所有消息队列*/
     public List<MessageQueue> fetchPublishMessageQueues(String topic) throws MQClientException {
         try {
             TopicRouteData topicRouteData = this.mQClientFactory.getMQClientAPIImpl().getTopicRouteInfoFromNameServer(topic, timeoutMillis);
@@ -253,6 +254,7 @@ public class MQAdminImpl {
             messageId.getOffset(), timeoutMillis);
     }
 
+    /*根据条件查询消息*/
     public QueryResult queryMessage(String topic, String key, int maxNum, long begin,
         long end) throws MQClientException,
         InterruptedException {
