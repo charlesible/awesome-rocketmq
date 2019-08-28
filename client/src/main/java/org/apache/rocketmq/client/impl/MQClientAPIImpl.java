@@ -556,7 +556,7 @@ public class MQClientAPIImpl {
 
         throw new MQBrokerException(response.getCode(), response.getRemark());
     }
-
+    //pull拉取消息主入口
     public PullResult pullMessage(
         final String addr,
         final PullMessageRequestHeader requestHeader,

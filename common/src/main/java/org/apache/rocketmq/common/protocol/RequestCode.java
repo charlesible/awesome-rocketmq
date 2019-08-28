@@ -21,11 +21,11 @@ public class RequestCode {
 
     public static final int SEND_MESSAGE = 10;//发送消息
 
-    public static final int PULL_MESSAGE = 11;
+    public static final int PULL_MESSAGE = 11;//从broker拉取消息
 
     public static final int QUERY_MESSAGE = 12;
     public static final int QUERY_BROKER_OFFSET = 13;
-    public static final int QUERY_CONSUMER_OFFSET = 14;
+    public static final int QUERY_CONSUMER_OFFSET = 14;//获取customer拉取消息offset
     public static final int UPDATE_CONSUMER_OFFSET = 15;
     public static final int UPDATE_AND_CREATE_TOPIC = 17;
     public static final int GET_ALL_TOPIC_CONFIG = 21;
