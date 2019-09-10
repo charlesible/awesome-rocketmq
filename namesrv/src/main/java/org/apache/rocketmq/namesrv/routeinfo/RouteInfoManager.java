@@ -98,7 +98,7 @@ public class RouteInfoManager {
 
         return topicList.encode();
     }
-
+    /*处理心跳*/
     public RegisterBrokerResult registerBroker(
         final String clusterName,
         final String brokerAddr,
@@ -370,7 +370,7 @@ public class RouteInfoManager {
             }
         }
     }
-
+    //根据topic查询路由信息
     public TopicRouteData pickupTopicRouteData(final String topic) {
         TopicRouteData topicRouteData = new TopicRouteData();
         boolean foundQueueData = false;
